@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+/*   PANTALLA TV ESTILO  */
+
+
+
+.pantalla-tv {
+    width: 600px;
+    height: 400px;
+    background-color: black;
+    border: 20px solid gray;
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+   
+}
+
+
+
+.nombre-del-canal {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.hora {font-size: 18px;}
+
+.fecha {font-size: 16px;}
+
+.volumen {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    font-size: 18px;
+}
+
+
+
+
+/*   MANDO DE LA TV Y EL ESTLO*/
+
+
+.mando {
+    width: 300px;
+    margin: 50px;
+    padding: 20px;
+    background-color: dimgray;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    
+   
+    
+}
+
+.mando button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: dimgray;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+
+
+
+}
+
+.mando button:hover {
+    background-color: darkgray;
+}
+
+
+
+/*    ESTILO DEL MENU     */
+
+
+
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    
+    padding: 20px;
+    border-radius: 5px;
+    display: grid;
+    grid-gap: 10px;
+}
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu ul li:hover {
+    color: blue;
+}
+
+
+/*    MENU DE INTERACCION    */ 
+
+
