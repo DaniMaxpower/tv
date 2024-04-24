@@ -15,7 +15,7 @@ body {
     width: 600px;
     height: 400px;
     background-color: black;
-    border: 20px solid gray;
+    border: 20px solid rgba(128, 128, 128, 0.658);
     border-radius: 20px;
     margin: 50px auto;
     padding: 20px;
@@ -62,9 +62,9 @@ body {
     width: 300px;
     margin: 50px auto;
     padding: 20px;
-    background-color: dimgray;
+    background-color:rgba(169, 169, 169, 0.39);
     border-radius: 10px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(15, 44, 1);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
@@ -78,7 +78,7 @@ body {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    background-color: dimgray;
+    background-color: rgb(105, 105, 105);
     border: none;
     border-radius: 5px;
     color: aliceblue;
@@ -106,7 +106,6 @@ body {
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: rgba(255, 255, 255, 0.8);
 
     padding: 20px;
     border-radius: 5px;
@@ -125,8 +124,6 @@ body {
 
 .menu ul li:hover {
     color: blue;
-}*/
+}
 
-
-/*    MENU DE INTERACCION    */ 
 
