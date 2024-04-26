@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <link rel="preload" as="script" href="/vendor/livewire/livewire.js?id=90730a3b0e7144480175">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com/" >
+    <link rel="dns-prefetch" href="https://ssm.codes" >
+    <link rel="dns-prefetch" href="https://try.abtasty.com" >
+    <link rel="dns-prefetch" href="https://securepubads.g.doubleclick.net" >
+    <link rel="dns-prefetch" href="https://googleoptimize.com" >
+    <link rel="dns-prefetch" href="https://aax.amazon-adsystem.com" >
+    <link rel="dns-prefetch" href="https://resources.videvo.net" >
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        function checkOptanonConsentAndLoadScripts() {
+            //Get a cookie by name
+            function getCookie(name) {
+                let cookieValue = null;
+                if (document.cookie && document.cookie !== '') {
+                    let cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        let cookie = cookies[i].trim();
+                        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+
+            // Parse the OptanonConsent cookie
+            let optanonConsent = getCookie("OptanonConsent");
+            if (optanonConsent) {
+                let groupsString = optanonConsent.split('&').find(segment => segment.startsWith("groups"));
+                if (groupsString) {
+                    if (groupsString.includes("C0002:1")) {
+                        // Update Alpine store
+                        Alpine.store('scriptLoader').loadScripts = true;
+                    }
+                }
+            }
+        }
+
+        checkOptanonConsentAndLoadScripts();
+
+        // Move loadOneTrustScript function out of the event handler
+        function loadOneTrustScript(src) {
+            return new Promise((resolve, reject) => {
+                if (!document.querySelector(`script[src='${src}']`)) {
+                    let script = document.createElement('script');
+                    script.onload = resolve;
+                    script.onerror = reject;
+                    script.src = src;
+                    script.id = 'onetrust_modal';
+                    script.setAttribute('data-document-language', true);
+                    script.setAttribute('charset', 'UTF-8');
+                    script.setAttribute('data-domain-script', "e616b904-3acd-4e4b-ad07-5deddea821ea");
+                    document.body.appendChild(script);
+                } else {
+                    resolve();
+                }
+            });
+        }
+
+        // List of events grouped by device type
+        const mouseEvents = ["mousemove", "scroll", "mousedown", "DOMMouseScroll", "mousewheel", "keyup"];
+        const touchEvents = ["touchstart", "touchmove"];
+
+        // Combine both event types
+        const allEvents = [...mouseEvents, ...touchEvents];
+
+        allEvents.forEach(evt => {
+            document.documentElement.addEventListener(evt, e => {
+                if(!document.getElementById('onetrust_modal')) {
+                    loadOneTrustScript('https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js').then(() => {
+                        // Ensure this function is only defined after the script has loaded
+                        let OptanonWrapper = function() { };
+                    });
+                }
+            }, { passive: true }); // Setting passive to true to improve scroll performance
+        });
+
+        document.body.addEventListener('click', function(event) {
+            // Check for clicks on specific elements by ID or class
+            if (event.target.id === 'onetrust-accept-btn-handler' || 
+                event.target.closest('#onetrust-accept-btn-handler') || 
+                event.target.id === 'accept-recommended-btn-handler' || 
+                event.target.closest('#accept-recommended-btn-handler') || 
+                event.target.classList.contains('save-preference-btn-handler') ||
+                event.target.closest('.save-preference-btn-handler')) {
+                
+                checkOptanonConsentAndLoadScripts();
+            }
+        });
+
+    });
+</script>
+
+                <link rel="preload" as="image" href="https://v6.cdnpk.net/videvo_files/video/partners1671/thumbnails/BB_5bb25017-c437-48ed-b80b-861831764010_small.jpg">
+    
+    <script>
+    var dataLayer = window.dataLayer || [];
+</script>
+<template x-data x-if="Alpine.store('scriptLoader')?.loadScripts" id="gtm-script">
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WVLJMDF');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVLJMDF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</template>
+
+    <template x-data x-if="Alpine.store('scriptLoader')?.loadScripts" id="header-scripts">
+        <script type="text/javascript" src="https://try.abtasty.com/593d43b36a4f51dce420ba5c9e3d0b51.js"></script>
+    </template>
+    <template x-data x-if="Alpine.store('scriptLoader')?.loadScripts">
+        <script src="https://ssm.codes/smart-tag/videvonet.js"></script>
+    </template>
+
+    <!-- start SEO -->
+
+<title>Descarga Gratis Vídeos De Stock De Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.. Descarga Clips De </title>
+<meta name="description" content="Descarga gratis vídeos de stock de Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.. Haz clic aquí para descargar vídeos sin derechos de autor de Videvo.">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/?filename=">
+<meta property="og:title" content="Descarga Gratis Vídeos De Stock De Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.. Descarga Clips De ">
+        <meta property="og:description" content="Descarga gratis vídeos de stock de Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.. Haz clic aquí para descargar vídeos sin derechos de autor de Videvo.">
+    <meta property="og:site_name" content="Free Stock Footage - Videvo.net">
+<meta property="og:image" content="https://www.videvo.net/images/og-image-new.png">
+
+<link rel="alternate" hreflang="x-default" href="https://www.videvo.net/video/forwards-fly-above-rugged-sea-coast-waves-rolling-to-coastal-rocks-and-splashing-to-height/1490738/">
+<link rel="alternate" hreflang="en" href="https://www.videvo.net/video/forwards-fly-above-rugged-sea-coast-waves-rolling-to-coastal-rocks-and-splashing-to-height/1490738/">
+<link rel="alternate" hreflang="es" href="https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/">
+<link rel="alternate" hreflang="de" href="https://www.videvo.net/de/video/vorwarts-fliegen-uber-der-zerklufteten-meereskuste-wellen-die-auf-kustenfelsen-rollen-und-in-die-hohe-spritzen/1490738/">
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https:\/\/schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": {
+                            "@type": "Thing",
+                            "@id": "https:\/\/www.videvo.net\/es\/"
+                        }
+                    },                                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Vídeo",
+                        "item": {
+                            "@type": "Thing",
+                            "@id": "https:\/\/www.videvo.net\/es\/videos-de-stock\/"
+                        }
+                    },                                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.",
+                        "item": {
+                            "@type": "Thing",
+                            "@id": "https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/"
+                        }
+                    }                            ]
+        }
+    </script>
+
+<link rel="canonical" href="https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/">
+
+<!-- end SEO -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="preload" href="https://www.videvo.net/build/assets/Inter-Regular.1c73d805.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.videvo.net/build/assets/Inter-Semibold.8288b418.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://www.videvo.net/build/assets/Degular-Semibold.2e69f833.woff2" as="font" type="font/woff2" crossorigin>
+
+
+
+    
+    <link rel="preload" as="style" href="https://www.videvo.net/build/assets/app.5f23f475.css" /><link rel="stylesheet" href="https://www.videvo.net/build/assets/app.5f23f475.css" />    <style >[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+
+        <link rel="preload" as="style" href="https://www.videvo.net/build/assets/clip-actions.acc993e8.css" /><link rel="stylesheet" href="https://www.videvo.net/build/assets/clip-actions.acc993e8.css" /><style scoped>
+.focused .modal__overlay {
+    opacity: 0 !important;
+}
+#clip-wrapper-player-actions #add-to-collection-wrapper {
+    z-index:50;
+    position: relative;
+    top: -20px;
+    right: -15px;
+}
+
+@media (max-width: 767px) {
+    #add-to-collection-wrapper {
+        z-index:50;
+    }
+}
+.focused a{
+    z-index: 40;
+}
+
+.focused .action-btn {
+    opacity: 1 !important;
+}
+.tooltip {
+    position: absolute;
+    white-space: nowrap;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2b2b2b;
+    padding: 5px;
+    z-index: 2;
+    top:-10px;
+    box-shadow: -1px 0 0 0 rgb(0 0 0 / 7%), 0 1px 0 0 rgb(0 0 0 / 7%), 1px 0 0 0 rgb(0 0 0 / 7%), 0 2px 12px 0 rgb(0 0 0 / 30%);
+    transform: translateX(-86%) translateY(calc(-100%));
+    left: 86%;
+}
+
+.tooltip::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    right: 14%;
+    bottom: -4px;
+    z-index: -1;
+    transform: rotateZ(45deg);
+}
+</style>
+</head>
+<body class="flex min-h-screen flex-col overflow-y-scroll font-custom antialiased scroll-smooth">
+
+            <div itemscope="" itemprop="VideoObject" itemtype="schema.org/VideoObject" class="!hidden">
+    <meta itemprop="name" content="Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.">
+    <meta itemprop="description" content="Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura. Sudáfrica">
+    <meta itemprop="contentUrl" content="">
+    <meta itemprop="thumbnailUrl" content="">
+    <meta itemprop="uploadDate" content="2022-12-20 00:00:00">
+    <meta itemprop="duration" content="PT23S">
+</div>    
+            <script src="https://accounts.google.com/gsi/client?hl=es" async></script>
+        <div id="credential_picker_container" style="position: fixed; z-index: 9999; height: 232px;"></div>
+    
+            <header x-data="initHeader()" class=" fixed top-0 left-0 right-0 z-50 flex flex-col lg:flex">
+    <div class="flex min-h-[3.5rem] items-center justify-between gap-2 px-4 max-xs:px-3 duration-300 lg:h-16 lg:gap-0 lg:transition-all max-lg:h-full w-full" :class="{'max-lg:items-start max-xs:items-center max-xs:pt-2': openSearch}">
+        <div class="flex flex-1 items-center gap-3 sm:gap-4 lg:gap-8 max-lg:!gap-y-0" :class="{'max-lg:h-full max-lg:flex-wrap max-sm:max-w-[80%]': openSearch}">
+            <a href="https://www.videvo.net/es/#rs=videvo-logo" class="flex flex-1 items-center lg:flex-none order-0 sm:min-w-[90px]">
+                <img src="/images/logo_rebranding.svg" width="118" height="24" alt="Videvo logo" class="max-xs:hidden" :class="{'max-xs:!block': openSearch, 'max-xs:!block': false }"/>
+                <img src="/images/logo-small.svg" width="19.8" height="21.9" alt="Videvo logo" class="max-xs:block hidden" :class="{'max-xs:!hidden': openSearch, 'max-xs:!hidden': false }"/>
+            </a>
+                            <div class="max-navbar:hidden max-w-xl flex-1 items-center py-2 flex order-0" :class="{ 'max-navbar:hidden': !openSearch, 'max-navbar:basis-full max-navbar:order-3 max-sm:max-w-full': openSearch }">
+                    <form x-data="initFormSearch()"  id="search" action="/es/search/" class="bg-gray-150 h-9 relative flex flex-1 rounded max-w-full" @submit.prevent.stop="validateSearch">
+    
+    <button type="submit"></button>
+    <div class="flex justify-center">
+        <div x-on:keydown.escape.prevent.stop="close($refs.button)" x-on:focusin.window="! $refs.panel.contains($event.target) && close()" x-id="['dropdown-button']" class="relative">
+            <!-- Button -->
+            <button x-ref="button" x-on:click="toggle()" :aria-expanded="open" :aria-controls="$id('dropdown-button')" type="button" class="bg-gray-50 border-gray-300 flex h-full items-center gap-2 whitespace-nowrap rounded-tl rounded-bl border-r pl-3 pr-2 max-xs:pl-2 font-semibold text-gray-900">
+                <span :class="`hidden`">
+                    Todos los vídeos                </span>
+                <span class="max-xs:block hidden mr-3">
+                    <svg x-cloak="1" x-show="categoryIconIndex == 1" class="fill-current h-6 w-6" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6493 23C24.0076 23.0002 24.3513 22.8463 24.6046 22.5723C24.858 22.2984 25.0002 21.9267 25 21.5393V6.4607C25.0002 6.07328 24.858 5.70165 24.6046 5.42767C24.3513 5.1537 24.0076 4.99984 23.6493 5H4.35096C3.99262 4.99984 3.64891 5.15369 3.39553 5.42766C3.14214 5.70162 2.99986 6.07325 3 6.4607V21.5393C2.99986 21.9268 3.14214 22.2984 3.39553 22.5723C3.64891 22.8463 3.99262 23.0002 4.35096 23H23.6493ZM23 21H5V7H23V21ZM14.4991 15.9991L18 13.9994L14.4991 12.0012L11 10V18L14.4991 15.9991Z" fill="#2B2B2B"/>
+</svg>                    <svg x-cloak="1" x-show="categoryIconIndex == 2" class="fill-current h-6 w-6" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M9.48816 3.81992C9.3405 2.98594 8.61316 2.35156 7.73816 2.35156H2.05066C1.07175 2.35156 0.273315 3.15 0.273315 4.12891V9.87109C0.273315 10.85 1.07175 11.6484 2.05066 11.6484H7.73816C8.61316 11.6484 9.3405 11.0141 9.48816 10.1801V3.81992Z" /><path d="M13.3849 3.89087C13.1743 3.76782 12.9118 3.76782 12.7013 3.89087L10.5822 5.11587V8.9057L12.7013 10.128C12.8079 10.1881 12.9255 10.2182 13.0431 10.2182C13.1607 10.2182 13.2782 10.1881 13.3849 10.128C13.5954 10.0049 13.7267 9.7807 13.7267 9.53461V4.48423C13.7267 4.23813 13.5954 4.01392 13.3849 3.89087Z" /></svg>                    <svg x-cloak="1" x-show="categoryIconIndex == 3" class="fill-current h-6 w-6" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13 4.05078V6.07078C11.5777 6.24887 10.23 6.80867 9.10005 7.69078L7.68005 6.26078C9.16005 5.05078 10.99 4.25078 13 4.05078ZM6.26005 7.68078L7.69005 9.10078C6.83005 10.2108 6.25005 11.5408 6.07005 13.0008H4.05005C4.24595 11.0483 5.01486 9.19737 6.26005 7.68078ZM6.07005 15.0008H4.05005C4.25005 17.0108 5.05005 18.8408 6.26005 20.3208L7.69005 18.8908C6.80641 17.7655 6.24632 16.4206 6.07005 15.0008ZM13 23.9508C11.048 23.753 9.19762 22.9843 7.68005 21.7408L9.10005 20.3108C10.23 21.1929 11.5777 21.7527 13 21.9308V23.9508ZM24 14.0008C24 19.1608 20.08 23.4208 15.05 23.9508V21.9308C18.97 21.4108 22 18.0508 22 14.0008C22 9.95078 18.97 6.59078 15.05 6.07078V4.05078C20.08 4.58078 24 8.84078 24 14.0008ZM12 10.0008L15.05 12.0363L18 14.0008L15.05 15.9652L12 18.0008V10.0008Z" fill="#2B2B2B"/>
+</svg>                    <svg x-cloak="1" x-show="categoryIconIndex == 4" class="fill-current h-6 w-6" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.578 0.752131C6.32256 0.646311 6.02853 0.704826 5.83302 0.900307L3.29886 3.43447H1.77734C0.797316 3.43447 0 4.23179 0 5.21181V8.82119C0 9.80122 0.797316 10.5985 1.77734 10.5985H3.29889L5.83305 13.1327C6.02856 13.3282 6.32256 13.3867 6.57803 13.2809C6.83348 13.1751 7.00003 12.9258 7.00003 12.6493V1.38369C7 1.10722 6.83345 0.857951 6.578 0.752131ZM5.63281 10.9991L4.06541 9.43171C3.93723 9.30352 3.76335 9.2315 3.58203 9.2315H1.77734C1.55118 9.2315 1.36719 9.04751 1.36719 8.82135V5.21197C1.36719 4.98581 1.55118 4.80181 1.77734 4.80181H3.58203C3.76332 4.80181 3.9372 4.72979 4.06541 4.6016L5.63281 3.03418V10.9991ZM8.77734 12.2392C8.39981 12.2392 8.09375 11.9331 8.09375 11.5556C8.09375 11.1781 8.39981 10.872 8.77734 10.872C10.9033 10.872 12.6328 9.14246 12.6328 7.01654C12.6328 4.89062 10.9033 3.16107 8.77734 3.16107C8.39981 3.16107 8.09375 2.85501 8.09375 2.47748C8.09375 2.09994 8.39981 1.79388 8.77734 1.79388C11.6571 1.79388 14 4.13675 14 7.01654C14 9.89633 11.6571 12.2392 8.77734 12.2392ZM8.77734 9.50482C8.39981 9.50482 8.09375 9.19876 8.09375 8.82123C8.09375 8.44369 8.39981 8.13763 8.77734 8.13763C9.3955 8.13763 9.89844 7.6347 9.89844 7.01654C9.89844 6.39838 9.3955 5.89545 8.77734 5.89545C8.39981 5.89545 8.09375 5.58939 8.09375 5.21185C8.09375 4.83432 8.39981 4.52826 8.77734 4.52826C10.1494 4.52826 11.2656 5.64448 11.2656 7.01654C11.2656 8.38859 10.1494 9.50482 8.77734 9.50482Z" /></svg>                    <svg x-cloak="1" x-show="categoryIconIndex == 5" class="fill-current h-6 w-6" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M20.1202143,11.0688896 C19.9916176,10.7181707 19.6928864,10.4857143 19.3389286,10.4857143 C18.9939471,10.4857143 18.67665,10.7077729 18.5470666,11.0955411 L17.4969177,14.2483969 L15.7319757,5.07275157 C15.6432177,4.60987347 15.2986832,4.33333333 14.9096429,4.33333333 C14.4924205,4.33333333 14.1390469,4.64553063 14.0726633,5.12578744 L12.5870974,15.8472742 L11.2070146,9.40281819 C11.1105702,8.95178445 10.7677335,8.68452381 10.385,8.68452381 C10.0206587,8.68452381 9.69381818,8.92717816 9.57837727,9.34445402 L8.29182875,14.0205753 L7.50795763,11.9611838 C7.37752625,11.6174539 7.0792676,11.3904762 6.72928571,11.3904762 C6.44411951,11.3904762 6.18906438,11.544319 6.03295091,11.7978366 L4.74225033,13.8571429 L2.53571429,13.8571429 C2.04761671,13.8571429 1.66666667,14.2804207 1.66666667,14.7857143 C1.66666667,15.2910079 2.04761671,15.7142857 2.53571429,15.7142857 L5.19714286,15.7142857 C5.48070356,15.7142857 5.74026583,15.5619221 5.89482186,15.310053 L6.55249238,14.267153 L7.64351083,17.1305876 C7.77508201,17.476633 8.06766243,17.7011905 8.41892857,17.7011905 C8.80310547,17.7011905 9.12006385,17.430115 9.22775274,17.0398578 L10.2845491,13.1979296 L11.9426182,20.9459442 C12.0406837,21.3994208 12.3749338,21.6666667 12.7614286,21.6666667 C13.1789643,21.6666667 13.5321397,21.3540822 13.5984292,20.8728697 L15.0412899,10.4597015 L16.4530211,17.8010416 C16.5393078,18.2506582 16.8861584,18.5416667 17.2807143,18.5416667 C17.6483058,18.5416667 17.9453664,18.3010721 18.0692054,17.9323069 L19.3748645,14.0162989 L20.5751519,17.2989923 C20.7037056,17.6495937 21.0035455,17.8821429 21.3575,17.8821429 C21.6402762,17.8821429 21.8952471,17.7296379 22.0502996,17.4788739 L23.210978,15.697619 L25.4728571,15.697619 C25.956669,15.697619 26.3333333,15.2791031 26.3333333,14.7785714 C26.3333333,14.2779477 25.9567247,13.8571429 25.4728571,13.8571429 L22.7707143,13.8571429 C22.4889028,13.8571429 22.2305569,14.0121285 22.0765685,14.2620473 L21.5625855,15.0146298 L20.1202143,11.0688896 Z"></path></svg>                </span>
+                <span x-cloak x-text="categoryText" class="max-xs:hidden"></span>
+                <svg class="fill-current h-4 w-4 rotate-90 text-gray-600" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>            </button>
+
+            <!-- Panel -->
+            <div x-ref="panel" x-show="open" x-cloak x-transition.origin.top.left :id="$id('dropdown-button')" style="display: block;" class="absolute left-0 z-20 mt-2 rounded-md bg-white p-2 shadow-md">
+                <button x-on:click.prevent="setCategory('video', 'All Videos'); categoryIconIndex = 1;" :class="category === 'videos' ? 'font-semibold bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-150'" class="flex w-full items-center gap-2 whitespace-nowrap rounded px-4 py-2 text-left">
+                    <svg class="fill-current h-6 w-6 mr-2" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.44271 6.03372L11.9519 8.74864C12.0815 8.82669 12.1612 8.96961 12.1612 9.12411C12.1612 9.27862 12.0815 9.42154 11.9519 9.49959L7.44271 12.2145C7.37675 12.2542 7.30288 12.2741 7.22903 12.2741C7.15641 12.2741 7.0838 12.2549 7.01863 12.2165C6.88713 12.1389 6.80603 11.9949 6.80603 11.839V6.4092C6.80603 6.2533 6.88713 6.1093 7.01863 6.03175C7.15011 5.95422 7.3119 5.95495 7.44271 6.03372Z" fill="#121212"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1.96875 2.375C0.882 2.375 0 3.257 0 4.34375V13.9062C0 14.4284 0.207421 14.9292 0.576633 15.2984C0.945846 15.6676 1.44661 15.875 1.96875 15.875H16.0312C16.5534 15.875 17.0542 15.6676 17.4234 15.2984C17.7926 14.9292 18 14.4284 18 13.9062V4.34375C18 3.257 17.118 2.375 16.0312 2.375H1.96875ZM1.76988 4.14488C1.82262 4.09213 1.89416 4.0625 1.96875 4.0625H16.0312C16.1058 4.0625 16.1774 4.09213 16.2301 4.14488C16.2829 4.19762 16.3125 4.26916 16.3125 4.34375V13.9062C16.3125 13.9808 16.2829 14.0524 16.2301 14.1051C16.1774 14.1579 16.1058 14.1875 16.0312 14.1875H1.96875C1.8135 14.1875 1.6875 14.0615 1.6875 13.9062V4.34375C1.6875 4.26916 1.71713 4.19762 1.76988 4.14488Z" fill="#121212"/>
+</svg>                    Todos los vídeos                    <svg x-show="category === 'video'" class="fill-current ml-auto h-3 w-3" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                </button>
+                <button x-on:click.prevent="setCategory('footage', 'Footage'); categoryIconIndex = 2;" :class="category === 'footage' ? 'font-semibold bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-150'" class="flex w-full items-center gap-2 whitespace-nowrap rounded px-4 py-2 text-left">
+                    <svg class="fill-current h-6 w-6 mr-2" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.2753 5.92695C17.0433 5.76172 16.7444 5.71953 16.4737 5.81797L13.0425 7.03437V6.18359C13.0425 4.925 12.0159 3.89844 10.7573 3.89844H2.63623C1.37764 3.89844 0.351074 4.925 0.351074 6.18359V13.5664C0.351074 14.825 1.37764 15.8516 2.63623 15.8516H10.7573C12.0159 15.8516 13.0425 14.825 13.0425 13.5664V12.7367L16.4737 13.9566C16.5687 13.9918 16.6671 14.0059 16.769 14.0059C16.9483 14.0059 17.1241 13.9496 17.2753 13.8441C17.5073 13.6789 17.6479 13.4117 17.6479 13.127V6.64766C17.6479 6.35937 17.5108 6.09219 17.2753 5.92695ZM11.2847 13.5664C11.2847 13.8582 11.0491 14.0938 10.7573 14.0938H2.63623C2.34443 14.0938 2.10889 13.8582 2.10889 13.5664V6.18359C2.10889 5.8918 2.34443 5.65625 2.63623 5.65625H10.7573C11.0491 5.65625 11.2847 5.8918 11.2847 6.18359V13.5664ZM15.8901 11.8824L13.0917 10.8875C13.0741 10.8805 13.0601 10.877 13.0425 10.8734V8.89766C13.0601 8.89414 13.0741 8.88711 13.0917 8.88359L15.8901 7.88867V11.8824Z" fill="#121212"/>
+</svg>                    Vídeos                    <svg x-show="category === 'footage'" class="fill-current ml-auto h-3 w-3" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                </button>
+                <button x-on:click.prevent="setCategory('motion-graphics', 'Motion Graphics'); categoryIconIndex = 3;" :class="category === 'motion-graphics' ? 'font-semibold bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-150'" class="flex w-full items-center gap-2 whitespace-nowrap rounded px-4 py-2 text-left">
+                    <svg class="fill-current h-6 w-6 mr-2" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_397_120076)">
+<path d="M8.07519 0.375V2.20214C6.79183 2.36322 5.5759 2.86957 4.55639 3.66746L3.27519 2.374C4.61053 1.27952 6.26165 0.555905 8.07519 0.375Z" fill="#121212"/>
+<path d="M1.99399 3.65842L3.28421 4.94284C2.50827 5.94686 1.98496 7.14987 1.82256 8.47048H0C0.176757 6.70442 0.870507 5.0302 1.99399 3.65842Z" fill="#121212"/>
+<path d="M0 10.2795H1.82256C1.9816 11.5638 2.48694 12.7803 3.28421 13.7981L1.99399 15.0916C0.902256 13.7529 0.180451 12.0976 0 10.2795Z" fill="#121212"/>
+<path d="M8.07519 18.375C6.31398 18.1961 4.64443 17.5008 3.27519 16.376L4.55639 15.0825C5.5759 15.8804 6.79183 16.3868 8.07519 16.5479V18.375Z" fill="#121212"/>
+<path d="M9.92481 18.375C14.4632 17.8956 18 14.0423 18 9.375C18 4.70766 14.4632 0.854397 9.92481 0.375V2.20214C13.4617 2.67249 16.1955 5.71168 16.1955 9.375C16.1955 13.0383 13.4617 16.0775 9.92481 16.5479V18.375Z" fill="#121212"/>
+<path d="M7.72418 6.28372L12.2333 8.99864C12.363 9.07669 12.4426 9.21961 12.4426 9.37411C12.4426 9.52862 12.363 9.67154 12.2333 9.74959L7.72418 12.4645C7.65822 12.5042 7.58435 12.5241 7.5105 12.5241C7.43788 12.5241 7.36527 12.5049 7.3001 12.4665C7.1686 12.3889 7.0875 12.2449 7.0875 12.089V6.6592C7.0875 6.5033 7.1686 6.3593 7.3001 6.28175C7.43158 6.20422 7.59337 6.20495 7.72418 6.28372Z" fill="#121212"/>
+</g>
+<defs>
+<clipPath id="clip0_397_120076">
+<rect width="18" height="18" fill="white" transform="translate(0 0.375)"/>
+</clipPath>
+</defs>
+</svg>                    Motion graphics                    <svg x-show="category === 'motion-graphics'" class="fill-current ml-auto h-3 w-3" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                </button>
+                <button x-on:click.prevent="setCategory('music', 'Music'); categoryIconIndex = 4;" :class="category === 'music' ? 'font-semibold bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-150'" class="flex w-full items-center gap-2 whitespace-nowrap rounded px-4 py-2 text-left">
+                    <svg class="fill-current h-6 w-6 mr-2" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.7498 13.0035C15.7472 15.019 14.2227 16.008 12.8261 16.008C11.6474 16.008 10.5288 15.3029 10.5288 13.9134C10.5288 12.4824 12.0964 11.1681 13.8115 11.1681C14.0217 11.1681 14.2331 11.1875 14.4446 11.229V5.63984L6.61308 7.23285V14.2971C6.61047 16.3139 5.07289 17.3042 3.66583 17.3042C2.48328 17.3042 1.39209 16.6017 1.39209 15.2173C1.39209 13.7838 2.95969 12.463 4.6787 12.463C4.88754 12.463 5.09899 12.4824 5.31044 12.5239V4.07276L15.7498 1.75V13.0035V13.0035Z" fill="#121212"/>
+</svg>                    Música                    <svg x-show="category === 'music'" class="fill-current ml-auto h-3 w-3" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                </button>
+                <button x-on:click.prevent="setCategory('sound-effects', 'Sound Effects'); categoryIconIndex = 5;" :class="category === 'sound-effects' ? 'font-semibold bg-blue-500 text-white' : 'text-gray-800 hover:bg-gray-150'" class="flex w-full items-center gap-2 whitespace-nowrap rounded px-4 py-2 text-left">
+                    <svg class="fill-current h-6 w-6 mr-2" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.21209 3.075C9.27151 2.65982 9.59376 2.375 9.98642 2.375C10.3533 2.375 10.6686 2.62824 10.7482 3.02877L12.0687 9.65863L12.7678 7.63139C12.8847 7.29368 13.1766 7.09058 13.5017 7.09058C13.8358 7.09058 14.1104 7.3031 14.2261 7.60793L15.2967 10.4362L15.5813 10.0338C15.7219 9.81496 15.9604 9.67466 16.2254 9.67466H17.206C17.6597 9.67466 18 10.0536 18 10.4882C18 10.9231 17.6593 11.2999 17.206 11.2999H16.635L15.7474 12.6155C15.606 12.8355 15.3699 12.9743 15.1038 12.9743C14.7699 12.9743 14.4943 12.7619 14.3785 12.457L13.5351 10.2292L12.5994 12.9394C12.4884 13.2587 12.2149 13.4798 11.8682 13.4798C11.4961 13.4798 11.1796 13.2146 11.1022 12.8251L10.1087 7.83563L9.05585 15.1739C8.99653 15.5897 8.67454 15.875 8.28149 15.875C7.91691 15.875 7.61071 15.6295 7.52304 15.238L6.30223 9.72864L5.58411 12.2499C5.48743 12.5882 5.19736 12.8356 4.83506 12.8356C4.50379 12.8356 4.23423 12.6299 4.11579 12.3291L3.32911 10.3351L2.92613 10.9523C2.78469 11.1745 2.54429 11.3127 2.27809 11.3127H0.800831C0.344052 11.3127 0 10.9322 0 10.4937C0 10.0552 0.344052 9.67466 0.800831 9.67466H1.85557L2.84681 8.14732C2.98883 7.92484 3.22541 7.78405 3.49407 7.78405C3.82387 7.78405 4.09824 7.99115 4.21595 8.29071L4.71718 9.56243L5.64813 6.29469C5.75196 5.93224 6.05227 5.71003 6.39543 5.71003C6.75575 5.71003 7.06985 5.95428 7.15647 6.34542L8.11966 10.6891L9.21209 3.075Z" fill="#121212"/>
+</svg>                    Efectos de sonido                    <svg x-show="category === 'sound-effects'" class="fill-current ml-auto h-3 w-3" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                </button>
+            </div>
+        </div>
+    </div>
+        <input id="searchInput" type="search" class="h-full min-w-0 flex-1 appearance-none rounded-tr rounded-br bg-transparent pl-4 pr-10 text-gray-800 placeholder-gray-600 hover:bg-white focus:bg-white focus:outline-none" :placeholder="'Search' + ' ' + categoryText" name="q" value="" autocomplete="off"/>
+        <input type="hidden" name="mode" :value="category">
+
+    <button type="submit" class="w-9 h-9 absolute top-0 right-0 flex items-center justify-center rounded text-gray-900">
+        <svg class="fill-current h-4 w-4" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7173 16.4393L12.9552 11.6773C13.9077 10.4527 14.4759 8.91502 14.4759 7.24698C14.4759 3.26096 11.233 0.0180664 7.24698 0.0180664C3.26096 0.0180664 0.0180664 3.26096 0.0180664 7.24698C0.0180664 11.233 3.26096 14.4759 7.24698 14.4759C8.91502 14.4759 10.4527 13.9077 11.6773 12.9552L16.4393 17.7172C16.6158 17.8937 16.8471 17.9819 17.0783 17.9819C17.3096 17.9819 17.5408 17.8937 17.7173 17.7173C18.0701 17.3644 18.0701 16.7922 17.7173 16.4393ZM1.8253 7.24698C1.8253 4.25746 4.25746 1.8253 7.24698 1.8253C10.2365 1.8253 12.6687 4.25746 12.6687 7.24698C12.6687 10.2365 10.2365 12.6687 7.24698 12.6687C4.25746 12.6687 1.8253 10.2365 1.8253 7.24698Z" />
+</svg>    </button>
+</form>
+<style scoped>
+    .highlighted {
+        font-weight: bold;
+        color: #000;
+    }
+    .focused-suggestion {
+        background-color: rgb(200,200,200);
+    }
+</style>
+<script>
+    function saveLastQuery() {
+        let query = document.querySelector('input[name="q"]').value.replace(/(\r \t \n)/gm, '').trim();
+            query = query.replace(/(\s+)/gm, ' ');
+            query = query.replace(/%20/g, "+");
+        localStorage.setItem('last_search', query);
+    }
+    function initFormSearch() {
+        let firstCategory = "video";
+        let firstCategoryName = firstCategory.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+        return {
+            open: false,
+            categoryIconIndex: 1,
+            category: firstCategory,
+            categoryText: `${(firstCategory === "video" ? "Todos los vídeos" : firstCategoryName)}`,
+            toggle() {
+                if (this.open) {
+                    return this.close()
+                }
+
+                this.$refs.button.focus()
+
+                this.open = true
+            },
+            setCategory(category, text) {
+                this.category = category
+                this.categoryText = text
+                this.close()
+            },
+            close(focusAfter) {
+                if (!this.open) return
+
+                this.open = false
+
+                focusAfter && focusAfter.focus()
+            },
+            validateSearch(e) {
+                const searchValueLength = document.querySelector('#searchInput').value?.trim()?.length ?? 0;
+                if (searchValueLength === 0) {
+                    e.preventDefault();
+                    document.querySelector('#searchInput').value = '';
+                    toggleSearchInputPlaceholder();
+                    return false;
+                }
+            }
+        }
+    }
+
+    function toggleSearchInputPlaceholder() {
+        document.querySelector("#searchInput").placeholder = 'Escribe un término de búsqueda';
+        setTimeout(() => {
+            document.querySelector("#searchInput").placeholder = 'Buscar...';
+        }, 3000)
+    }
+
+        document.getElementById('search').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const searchValueLength = document.querySelector('#searchInput').value?.trim()?.length ?? 0;
+        if (searchValueLength === 0) {
+            document.querySelector('#searchInput').value = '';
+            toggleSearchInputPlaceholder();
+            return false;
+        }
+
+        let oldTimestamp = localStorage.getItem('istock_redirected');
+        let difference = 43200000; //86400000; //2629743.83;
+        let currentTimestamp = Date.now();
+        let timeout = 1000;
+
+        if ((oldTimestamp == null || currentTimestamp - oldTimestamp > difference) ) {
+
+            const istockRedirectBaseUrl = 'https://istockphoto.6q33.net/c/51471/1020584/4205';
+
+            let query = this.querySelector('input[name="q"]').value.replace(/(\r \t \n)/gm, '').trim();
+            query = query.replace(/(\s+)/gm, ' ');
+            query = query.replace(/%20/g, "+");
+
+            let selectedType = this.querySelector('input[name="mode"]').value;
+            if(selectedType == 'motion-graphics') {
+                query = 'animated ' + query;
+            }
+
+            if(selectedType == 'music' || selectedType == 'sound-effects') {
+                saveLastQuery();
+                this.submit();
+                return;
+            }
+
+            let url = new URL(istockRedirectBaseUrl);
+            url.searchParams.set('adplacement', 'red_indirect_all');
+            url.searchParams.set('sharedid', query + '+search');
+            url.href += '&u=https%3A%2F%2Fwww.istockphoto.com%2Fsearch%2F2%2Ffilm%3Fphrase%3D' + query;
+
+            if(redirectIstock(url.href, currentTimestamp)) {
+                saveLastQuery();
+                this.submit();
+            }
+        } else {
+            saveLastQuery();
+            this.submit();
+            return;
+        }
+
+    });
+
+    function redirectIstock(url, currentTimestamp) {
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('target', '_blank');
+
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        try {
+            localStorage.setItem('istock_redirected', currentTimestamp);
+            
+            //Trigger Google Analytics event for istock redirect
+            window.dataLayer.push({
+                event: 'istockRedirectEvent',
+                eventCategory: 'Istock Redirect',
+                eventAction: 'Triggered redirect on search',
+                eventLabel: 'url: ' + "https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/"
+            });
+
+            let customPixelSearchData = JSON.parse('{\u0022path\u0022:\u0022es\\\/video\\\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\\\/1490738\u0022,\u0022ga_client_id\u0022:null,\u0022lang\u0022:\u0022es\u0022,\u0022user_type\u0022:\u0022anonymous\u0022,\u0022user_id\u0022:null,\u0022r\u0022:0.14132495696718103}');
+            customPixelSearchData.action = 'clk';
+            customPixelSearchData.type = 'search';
+            customPixelSearchData.sponsor = 'istock';
+            customPixelSearchData.term = document.querySelector('#searchInput').value?.trim()?.length ?? 0;
+            customPixelSearchData.sponsor_pixel = 'red_indirect_all';
+            trackCustom('user-search-istock-redirect', customPixelSearchData);
+
+            let iStockPixelSearchData = JSON.parse('{\u0022sponsor_pixel\u0022:\u0022istock\u0022,\u0022sponsor\u0022:\u0022istock\u0022,\u0022term\u0022:\u0022\u0022,\u0022r\u0022:0.6692547601038845}');
+            iStockPixelSearchData.action = 'clk';
+            iStockPixelSearchData.type = 'search';
+            iStockPixelSearchData.sponsor = 'istock';
+            iStockPixelSearchData.term = document.querySelector('#searchInput').value?.trim()?.length ?? 0;
+            iStockPixelSearchData.utm_term = 'user search';
+            iStockPixelSearchData.sponsor_pixel = 'red_indirect_all';
+            trackCustomiStock(iStockPixelSearchData);
+            debugger;
+        } catch (error) {
+            console.log(error);
+        }
+        return true;
+    }
+    
+
+</script>
+                </div>
+                <button x-on:click="openSearch = ! openSearch" class="max-sm:ml-0 ml-auto h-6 border-r border-white/20 px-4 text-white max-navbar:block hidden  order-0">
+                    <svg height="16" width="16" class="fill-current h-4 w-4" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.7173 16.4393L12.9552 11.6773C13.9077 10.4527 14.4759 8.91502 14.4759 7.24698C14.4759 3.26096 11.233 0.0180664 7.24698 0.0180664C3.26096 0.0180664 0.0180664 3.26096 0.0180664 7.24698C0.0180664 11.233 3.26096 14.4759 7.24698 14.4759C8.91502 14.4759 10.4527 13.9077 11.6773 12.9552L16.4393 17.7172C16.6158 17.8937 16.8471 17.9819 17.0783 17.9819C17.3096 17.9819 17.5408 17.8937 17.7173 17.7173C18.0701 17.3644 18.0701 16.7922 17.7173 16.4393ZM1.8253 7.24698C1.8253 4.25746 4.25746 1.8253 7.24698 1.8253C10.2365 1.8253 12.6687 4.25746 12.6687 7.24698C12.6687 10.2365 10.2365 12.6687 7.24698 12.6687C4.25746 12.6687 1.8253 10.2365 1.8253 7.24698Z" />
+</svg>                </button>
+                        <div x-data="{ openMenu: false }" class="order-1 max-sm:ml-0 ml-auto flex items-center lg:order-2 lg:ml-0 lg:pr-4" x-cloak>
+    <button x-on:click="openMenu = true" class="ml-auto flex items-center justify-center text-white focus:outline-none istock-six:hidden">
+        Menú        <svg class="fill-current ml-2 h-4 w-4 rotate-90 opacity-50 group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>    </button>
+    <div class="relative">
+        <nav class="hidden flex-row istock-six:flex">
+    <span class="group relative">
+        <a href="https://www.videvo.net/es/videos-gratis/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Vídeos" ga4-link_url="https://www.videvo.net/es/videos-gratis/" onclick="sendEvent(this);">
+            Vídeos            <svg alt="caret icon" class="fill-current ml-1 h-5 w-5 rotate-90 fill-current opacity-60 group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>        </a>
+        <div class="absolute top-full left-0 hidden flex-col gap-1 rounded-lg bg-white p-2 shadow-lg group-hover:flex">
+            <a href="https://www.videvo.net/es/videos-gratis/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Todos los vídeos" ga4-link_url="https://www.videvo.net/es/videos-gratis/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Todos los vídeos</span>
+            </a>
+            <a href="https://www.videvo.net/es/videos-de-stock/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Vídeos" ga4-link_url="https://www.videvo.net/es/videos-de-stock/" onclick="sendEvent(this);">
+                Vídeos            </a>
+            <a href="https://www.videvo.net/es/motion-graphics-gratis/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Motion graphics" ga4-link_url="https://www.videvo.net/es/motion-graphics-gratis/" onclick="sendEvent(this);">
+                Motion graphics            </a>
+        </div>
+    </span>
+    <span class="group relative">
+        <a href="https://www.videvo.net/es/templates-edici%C3%B3n-video/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Plantillas" ga4-link_url="https://www.videvo.net/es/templates-edici%C3%B3n-video/" onclick="sendEvent(this);">
+            Plantillas            <svg alt="caret icon" class="fill-current ml-1 h-5 w-5 rotate-90 fill-current opacity-60 group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>        </a>
+        <div class="absolute top-full left-0 hidden flex-col gap-1 rounded-lg bg-white p-2 shadow-lg group-hover:flex">
+            <a href="https://www.videvo.net/es/templates-edici%C3%B3n-video/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Todas las plantillas" ga4-link_url="https://www.videvo.net/es/templates-edici%C3%B3n-video/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Todas las plantillas</span>
+            </a>
+            <a href="https://www.videvo.net/es/templates-after-effects/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para After Effects" ga4-link_url="https://www.videvo.net/es/templates-after-effects/" onclick="sendEvent(this);">
+                Plantillas para After Effects            </a>
+            <a href="https://www.videvo.net/es/templates-premiere-pro/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para Premier Pro" ga4-link_url="https://www.videvo.net/es/templates-premiere-pro/" onclick="sendEvent(this);">
+                Plantillas para Premier Pro            </a>
+            <a href="https://www.videvo.net/es/templates-davinci-resolve/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para DaVinci Resolve" ga4-link_url="https://www.videvo.net/es/templates-davinci-resolve/" onclick="sendEvent(this);">
+                Plantillas para DaVinci Resolve            </a>
+            <a href="https://www.videvo.net/es/templates-final-cut-pro/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para Final Cut Pro" ga4-link_url="https://www.videvo.net/es/templates-final-cut-pro/" onclick="sendEvent(this);">
+                Plantillas para Final Cut Pro            </a>
+            <a href="https://www.videvo.net/es/templates-motion-graphics/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas de motion graphics" ga4-link_url="https://www.videvo.net/es/templates-motion-graphics/" onclick="sendEvent(this);">
+                Plantillas de motion graphics            </a>
+        </div>
+    </span>
+    <span class="group relative">
+        <a href="https://www.videvo.net/es/musica-libre-de-derechos/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Audio" ga4-link_url="https://www.videvo.net/es/musica-libre-de-derechos/" onclick="sendEvent(this);">
+            Audio            <svg alt="caret icon" class="fill-current ml-1 h-5 w-5 rotate-90 fill-current opacity-60 group-hover:opacity-100" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>        </a>
+        <div class="absolute top-full left-0 hidden flex-col gap-1 rounded-lg bg-white p-2 shadow-lg group-hover:flex">
+            <a href="https://www.videvo.net/es/musica-libre-de-derechos/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Música" ga4-link_url="https://www.videvo.net/es/musica-libre-de-derechos/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Música</span>
+            </a>
+            <a href="https://www.videvo.net/es/efectos-de-sonido/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Efectos de sonido" ga4-link_url="https://www.videvo.net/es/efectos-de-sonido/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Efectos de sonido</span>
+            </a>
+        </div>
+    </span>
+    <a href="https://www.videvo.net/es/colecciones/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Colecciones" ga4-link_url="https://www.videvo.net/es/colecciones/" onclick="sendEvent(this);">Colecciones</a>
+    <a href="https://help.videvo.net/" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Ayuda" ga4-link_url="https://help.videvo.net/" onclick="sendEvent(this);">Ayuda</a>
+</nav>
+    </div>
+    <div :class="{ hidden: !openMenu }" class="fixed top-0 left-0 right-0 z-40 flex h-screen flex-col bg-white istock-six:hidden">
+        <nav class="flex flex-col">
+    <div class="mb-2 flex items-center justify-between border-b border-gray-200 py-2 pl-6 pr-4">
+        <p class="text-lg font-semibold text-gray-900">Menú</p>
+        <button x-on:click="openMenu = false" class="p-2 focus:outline-none">
+            <svg class="fill-current h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512">
+    <path d="M242.355 397l127.987-127.987c9.763-9.763 9.763-25.592 0-35.355-9.764-9.763-25.592-9.763-35.355 0L207 361.644 79.013 233.658c-9.764-9.763-25.592-9.763-35.355 0s-9.763 25.592 0 35.355l127.986 127.986L43.658 524.986c-9.763 9.763-9.763 25.592 0 35.355 9.764 9.763 25.592 9.763 35.355 0l127.986-127.986 127.987 127.987c9.764 9.763 25.592 9.763 35.355 0s9.763-25.592 0-35.355L242.355 397z">
+    </path>
+</svg>        </button>
+    </div>
+    <div class="relative px-4 py-1.5" x-data="{ openVideos: false }" x-cloak>
+        <div class="flex items-center rounded-lg" :class="{ 'bg-gray-150': openVideos }">
+            <a href="https://www.videvo.net/es/videos-gratis/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Vídeos" ga4-link_url="https://www.videvo.net/es/videos-gratis/" onclick="sendEvent(this);">
+                <svg class="fill-current mr-3 h-5 w-5 xl:hidden" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path d="M9.48816 3.81992C9.3405 2.98594 8.61316 2.35156 7.73816 2.35156H2.05066C1.07175 2.35156 0.273315 3.15 0.273315 4.12891V9.87109C0.273315 10.85 1.07175 11.6484 2.05066 11.6484H7.73816C8.61316 11.6484 9.3405 11.0141 9.48816 10.1801V3.81992Z" /><path d="M13.3849 3.89087C13.1743 3.76782 12.9118 3.76782 12.7013 3.89087L10.5822 5.11587V8.9057L12.7013 10.128C12.8079 10.1881 12.9255 10.2182 13.0431 10.2182C13.1607 10.2182 13.2782 10.1881 13.3849 10.128C13.5954 10.0049 13.7267 9.7807 13.7267 9.53461V4.48423C13.7267 4.23813 13.5954 4.01392 13.3849 3.89087Z" /></svg>                Vídeos            </a>
+            <button x-on:click="openVideos = ! openVideos" class="border-l border-gray-300 py-1 pl-4 pr-2">
+                <svg class="fill-current h-5 w-5 rotate-90 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>            </button>
+        </div>
+        <div :class="{ hidden: !openVideos }" class="flex flex-col pl-6">
+            <a href="https://www.videvo.net/es/videos-gratis/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Todos los vídeos" ga4-link_url="https://www.videvo.net/es/videos-gratis/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Todos los vídeos</span>
+            </a>
+            <a href="https://www.videvo.net/es/videos-de-stock/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Vídeos" ga4-link_url="https://www.videvo.net/es/videos-de-stock/" onclick="sendEvent(this);">
+                Vídeos            </a>
+            <a href="https://www.videvo.net/es/motion-graphics-gratis/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Motion graphics" ga4-link_url="https://www.videvo.net/es/motion-graphics-gratis/" onclick="sendEvent(this);">
+                Motion graphics            </a>
+        </div>
+    </div>
+    <div class="relative px-4 py-1.5" x-data="{ openTemplates: false }" x-cloak>
+        <div class="flex items-center rounded-lg" :class="{ 'bg-gray-150': openTemplates }">
+            <a href="https://www.videvo.net/es/templates-edici%C3%B3n-video/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Plantillas" ga4-link_url="https://www.videvo.net/es/templates-edici%C3%B3n-video/" onclick="sendEvent(this);">
+                <svg class="fill-current mr-3 h-5 w-5 xl:hidden" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M16.2422 4.70039V4.69688C16.2422 4.6793 16.2387 4.66172 16.2387 4.64414C16.2387 4.64063 16.2387 4.63359 16.2352 4.63008C16.2316 4.6125 16.2281 4.59141 16.2246 4.57383C16.2211 4.55625 16.2176 4.53516 16.2105 4.51758C16.2105 4.51406 16.207 4.50703 16.207 4.50352C16.2035 4.48594 16.1965 4.46836 16.1895 4.4543V4.45078C16.1824 4.4332 16.1754 4.41562 16.1684 4.39805C16.1648 4.39453 16.1648 4.3875 16.1613 4.38398C16.1543 4.36992 16.1473 4.35234 16.1402 4.33828C16.1402 4.33477 16.1367 4.33477 16.1367 4.33125C16.1297 4.31367 16.1191 4.29961 16.1086 4.28203C16.1051 4.27852 16.1016 4.27148 16.1016 4.26797C16.091 4.25391 16.084 4.23984 16.0734 4.22578L16.0699 4.22227C16.0594 4.2082 16.0453 4.19063 16.0348 4.17656C16.0313 4.17305 16.0277 4.16953 16.0242 4.16602C16.0102 4.15195 15.9996 4.13789 15.9855 4.12383L12.4699 0.608203C12.4559 0.594141 12.4418 0.580078 12.4277 0.569531C12.4242 0.566016 12.4207 0.5625 12.4172 0.558984C12.4031 0.548437 12.3891 0.534375 12.3715 0.523828C12.368 0.523828 12.368 0.520313 12.3645 0.520313C12.3504 0.509766 12.3363 0.499219 12.3223 0.492188C12.3187 0.488672 12.3117 0.485156 12.3082 0.481641C12.2941 0.471094 12.2766 0.464062 12.2625 0.453516C12.259 0.453516 12.2555 0.45 12.2555 0.45C12.2414 0.442969 12.2273 0.435937 12.2133 0.428906C12.2098 0.425391 12.2027 0.425391 12.1992 0.421875C12.1816 0.414844 12.1641 0.407812 12.15 0.400781C12.1465 0.400781 12.1465 0.400781 12.143 0.397266C12.1289 0.390234 12.1113 0.386719 12.0938 0.383203C12.0902 0.383203 12.0832 0.379688 12.0797 0.379688C12.0621 0.376172 12.0445 0.369141 12.027 0.365625H12.0234C12.0059 0.362109 11.9883 0.358594 11.9707 0.358594C11.9637 0.358594 11.9602 0.358594 11.9531 0.355078C11.9355 0.351563 11.918 0.351562 11.9039 0.351562C11.9004 0.351562 11.9004 0.351562 11.8969 0.351562C11.8828 0.351562 11.8688 0.351562 11.8547 0.351562H4.04297C2.78438 0.351562 1.75781 1.37813 1.75781 2.63672V15.3633C1.75781 16.6219 2.78438 17.6484 4.04297 17.6484H13.957C15.2156 17.6484 16.2422 16.6219 16.2422 15.3633V4.74609C16.2422 4.73203 16.2422 4.71797 16.2422 4.70039ZM13.957 15.8906H4.04297C3.75117 15.8906 3.51562 15.6551 3.51562 15.3633V2.63672C3.51562 2.34492 3.75117 2.10938 4.04297 2.10938H10.9688V4.74609C10.9688 5.23125 11.3625 5.625 11.8477 5.625H14.4844V15.3633C14.4844 15.6551 14.2488 15.8906 13.957 15.8906Z" /><path d="M11.8477 7.38281H6.15234C5.66719 7.38281 5.27344 7.77656 5.27344 8.26172V13.2539C5.27344 13.7391 5.66719 14.1328 6.15234 14.1328H11.8477C12.3328 14.1328 12.7266 13.7391 12.7266 13.2539V8.26172C12.7266 7.77656 12.3328 7.38281 11.8477 7.38281ZM10.9688 12.375H7.03125V9.14062H10.9688V12.375Z" /><path d="M6.1875 5.625H8.33203C8.81719 5.625 9.21094 5.23125 9.21094 4.74609C9.21094 4.26094 8.81719 3.86719 8.33203 3.86719H6.1875C5.70234 3.86719 5.30859 4.26094 5.30859 4.74609C5.30859 5.23125 5.70234 5.625 6.1875 5.625Z" /></svg>                Plantillas            </a>
+            <button x-on:click="openTemplates = ! openTemplates" class="border-l border-gray-300 py-1 pl-4 pr-2">
+                <svg class="fill-current h-5 w-5 rotate-90 text-gray-900" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>            </button>
+        </div>
+        <div :class="{ hidden: !openTemplates }" class="flex flex-col pl-6">
+            <a href="https://www.videvo.net/es/templates-edici%C3%B3n-video/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Todas las plantillas" ga4-link_url="https://www.videvo.net/es/templates-edici%C3%B3n-video/" onclick="sendEvent(this);">
+                <span class="font-semibold text-gray-800">Todas las plantillas</span>
+            </a>
+            <a href="https://www.videvo.net/es/templates-after-effects/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para After Effects" ga4-link_url="https://www.videvo.net/es/templates-after-effects/" onclick="sendEvent(this);">
+                Plantillas para After Effects            </a>
+            <a href="https://www.videvo.net/es/templates-premiere-pro/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para Premier Pro" ga4-link_url="https://www.videvo.net/es/templates-premiere-pro/" onclick="sendEvent(this);">
+                Plantillas para Premier Pro            </a>
+            <a href="https://www.videvo.net/es/templates-davinci-resolve/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para DaVinci Resolve" ga4-link_url="https://www.videvo.net/es/templates-davinci-resolve/" onclick="sendEvent(this);">
+                Plantillas para DaVinci Resolve            </a>
+            <a href="https://www.videvo.net/es/templates-final-cut-pro/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas para Final Cut Pro" ga4-link_url="https://www.videvo.net/es/templates-final-cut-pro/" onclick="sendEvent(this);">
+                Plantillas para Final Cut Pro            </a>
+            <a href="https://www.videvo.net/es/templates-motion-graphics/#rs=submenu" class="text-gray-800 py-2 pl-3 pr-6 whitespace-nowrap flex items-center hover:bg-gray-150 rounded-lg" ga4-event="navbar" ga4-link_text="Plantillas de motion graphics" ga4-link_url="https://www.videvo.net/es/templates-motion-graphics/" onclick="sendEvent(this);">
+                Plantillas de motion graphics            </a>
+        </div>
+    </div>
+    <div class="px-4 py-1.5">
+        <a href="https://www.videvo.net/es/musica-libre-de-derechos/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Música" ga4-link_url="https://www.videvo.net/es/musica-libre-de-derechos/" onclick="sendEvent(this);">
+            <svg class="fill-current mr-3 h-5 w-5 p-px xl:hidden" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.578 0.752131C6.32256 0.646311 6.02853 0.704826 5.83302 0.900307L3.29886 3.43447H1.77734C0.797316 3.43447 0 4.23179 0 5.21181V8.82119C0 9.80122 0.797316 10.5985 1.77734 10.5985H3.29889L5.83305 13.1327C6.02856 13.3282 6.32256 13.3867 6.57803 13.2809C6.83348 13.1751 7.00003 12.9258 7.00003 12.6493V1.38369C7 1.10722 6.83345 0.857951 6.578 0.752131ZM5.63281 10.9991L4.06541 9.43171C3.93723 9.30352 3.76335 9.2315 3.58203 9.2315H1.77734C1.55118 9.2315 1.36719 9.04751 1.36719 8.82135V5.21197C1.36719 4.98581 1.55118 4.80181 1.77734 4.80181H3.58203C3.76332 4.80181 3.9372 4.72979 4.06541 4.6016L5.63281 3.03418V10.9991ZM8.77734 12.2392C8.39981 12.2392 8.09375 11.9331 8.09375 11.5556C8.09375 11.1781 8.39981 10.872 8.77734 10.872C10.9033 10.872 12.6328 9.14246 12.6328 7.01654C12.6328 4.89062 10.9033 3.16107 8.77734 3.16107C8.39981 3.16107 8.09375 2.85501 8.09375 2.47748C8.09375 2.09994 8.39981 1.79388 8.77734 1.79388C11.6571 1.79388 14 4.13675 14 7.01654C14 9.89633 11.6571 12.2392 8.77734 12.2392ZM8.77734 9.50482C8.39981 9.50482 8.09375 9.19876 8.09375 8.82123C8.09375 8.44369 8.39981 8.13763 8.77734 8.13763C9.3955 8.13763 9.89844 7.6347 9.89844 7.01654C9.89844 6.39838 9.3955 5.89545 8.77734 5.89545C8.39981 5.89545 8.09375 5.58939 8.09375 5.21185C8.09375 4.83432 8.39981 4.52826 8.77734 4.52826C10.1494 4.52826 11.2656 5.64448 11.2656 7.01654C11.2656 8.38859 10.1494 9.50482 8.77734 9.50482Z" /></svg>            Música        </a>
+    </div>
+    <div class="px-4 py-1.5">
+        <a href="https://www.videvo.net/es/efectos-de-sonido/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Efectos de sonido" ga4-link_url="https://www.videvo.net/es/efectos-de-sonido/" onclick="sendEvent(this);">
+            <svg class="fill-current mr-3 h-5 w-5 p-px xl:hidden" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M6.578 0.752131C6.32256 0.646311 6.02853 0.704826 5.83302 0.900307L3.29886 3.43447H1.77734C0.797316 3.43447 0 4.23179 0 5.21181V8.82119C0 9.80122 0.797316 10.5985 1.77734 10.5985H3.29889L5.83305 13.1327C6.02856 13.3282 6.32256 13.3867 6.57803 13.2809C6.83348 13.1751 7.00003 12.9258 7.00003 12.6493V1.38369C7 1.10722 6.83345 0.857951 6.578 0.752131ZM5.63281 10.9991L4.06541 9.43171C3.93723 9.30352 3.76335 9.2315 3.58203 9.2315H1.77734C1.55118 9.2315 1.36719 9.04751 1.36719 8.82135V5.21197C1.36719 4.98581 1.55118 4.80181 1.77734 4.80181H3.58203C3.76332 4.80181 3.9372 4.72979 4.06541 4.6016L5.63281 3.03418V10.9991ZM8.77734 12.2392C8.39981 12.2392 8.09375 11.9331 8.09375 11.5556C8.09375 11.1781 8.39981 10.872 8.77734 10.872C10.9033 10.872 12.6328 9.14246 12.6328 7.01654C12.6328 4.89062 10.9033 3.16107 8.77734 3.16107C8.39981 3.16107 8.09375 2.85501 8.09375 2.47748C8.09375 2.09994 8.39981 1.79388 8.77734 1.79388C11.6571 1.79388 14 4.13675 14 7.01654C14 9.89633 11.6571 12.2392 8.77734 12.2392ZM8.77734 9.50482C8.39981 9.50482 8.09375 9.19876 8.09375 8.82123C8.09375 8.44369 8.39981 8.13763 8.77734 8.13763C9.3955 8.13763 9.89844 7.6347 9.89844 7.01654C9.89844 6.39838 9.3955 5.89545 8.77734 5.89545C8.39981 5.89545 8.09375 5.58939 8.09375 5.21185C8.09375 4.83432 8.39981 4.52826 8.77734 4.52826C10.1494 4.52826 11.2656 5.64448 11.2656 7.01654C11.2656 8.38859 10.1494 9.50482 8.77734 9.50482Z" /></svg>            Efectos de sonido        </a>
+    </div>
+    <div class="px-4 py-1.5">
+        <a href="https://www.videvo.net/es/colecciones/#rs=menu" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Colecciones" ga4-link_url="https://www.videvo.net/es/colecciones/" onclick="sendEvent(this);">
+            <svg class="fill-current mr-3 h-5 w-5 p-px xl:hidden" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="none" viewBox="0 0 24 24"><path d="M20 2H8c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM8 16V4h12l.002 12H8z"></path><path d="M4 8H2v12c0 1.103.897 2 2 2h12v-2H4V8zm11-2h-2v3h-3v2h3v3h2v-3h3V9h-3z"></path></svg>            Colecciones        </a>
+    </div>
+    <div class="px-4 py-1.5">
+        <a href="https://help.videvo.net/" class="flex flex-1 items-center rounded-lg p-2 font-semibold text-gray-900 hover:bg-gray-50 xl:flex-none xl:rounded-none xl:text-white/[0.85] xl:hover:bg-transparent xl:hover:text-white" ga4-event="navbar" ga4-link_text="Ayuda" ga4-link_url="https://help.videvo.net/" onclick="sendEvent(this);">
+            <svg class="fill-current mr-3 h-5 w-5 xl:hidden" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.05023 11.9498C3.37236 13.2719 5.13023 14 7 14C8.86977 14 10.6276 13.2719 11.9498 11.9498C13.2719 10.6276 14 8.86977 14 7C14 5.13023 13.2719 3.37239 11.9498 2.05023C10.6276 0.728137 8.86977 0 7 0C5.13023 0 3.37236 0.728137 2.05023 2.05023C0.728137 3.37239 0 5.13023 0 7C0 8.86977 0.728137 10.6276 2.05023 11.9498ZM1.36719 7C1.36719 3.89405 3.89405 1.36719 7 1.36719C10.1059 1.36719 12.6328 3.89405 12.6328 7C12.6328 10.1059 10.1059 12.6328 7 12.6328C3.89405 12.6328 1.36719 10.1059 1.36719 7ZM7 9.07812C6.62246 9.07812 6.31641 8.77207 6.31641 8.39453V7.51953C6.31641 7.142 6.62246 6.83594 7 6.83594C7.75387 6.83594 8.36719 6.22262 8.36719 5.46875C8.36719 4.71488 7.75387 4.10156 7 4.10156C6.24613 4.10156 5.63281 4.71488 5.63281 5.46875C5.63281 5.84629 5.32675 6.15234 4.94922 6.15234C4.57168 6.15234 4.26562 5.84629 4.26562 5.46875C4.26562 3.96102 5.49224 2.73438 7 2.73438C8.50776 2.73438 9.73438 3.96102 9.73438 5.46875C9.73438 6.74054 8.86164 7.81233 7.68359 8.11661V8.39453C7.68359 8.77207 7.37754 9.07812 7 9.07812ZM6.17969 10.4453C6.17969 10.8976 6.54768 11.2656 7 11.2656C7.45232 11.2656 7.82031 10.8976 7.82031 10.4453C7.82031 9.99299 7.45232 9.625 7 9.625C6.54768 9.625 6.17969 9.99299 6.17969 10.4453Z"/></svg>            Ayuda        </a>
+    </div>
+</nav>
+<div class="flex flex-col gap-2 p-4">
+    <a href="https://www.videvo.net/es/premium-plans/#plans-and-pricing" class="flex w-full items-center justify-center rounded-lg bg-blue-500 py-3 font-semibold text-white">
+        Unirse a Videvo    </a>
+    <a href="/es/auth/login" class="flex w-full items-center justify-center rounded-lg bg-gray-50 py-3 font-semibold text-gray-800">
+        Iniciar sesión    </a>
+</div>
+    </div>
+</div>
+
+        </div>
+        <template x-data x-if="Alpine.store('scriptLoader')?.loadScripts" id="page-view-scripts">
+        <script>
+            /* page_view */
+                            dataLayer.push({
+                    'event': 'page_view',
+                    'page_location': window.location.href,
+                    'page_title': document.title,
+                    'location_href': document.location.href,
+                    'page_type' : 'video.detail',
+                    'page_code' : '200',
+                    'page_lang' : 'es',
+                    'user_id' : '',
+                    'user_login_status' : 'not_logged',
+                    'user_registration_date' : '',
+                    'user_payment_start_date' : '',
+                    'user_payment_end_date' : '',
+                    'user_type' : 'anonymous',
+                })
+                    </script>
+                    <script>
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                        event: "impactIdentify",
+                        customerId: '',
+                        customerEmail: '',
+                    });
+            </script>
+                <script>
+            function getAllUrlParams(url) {
+                var queryString = url ? url.split('?')[1] : window.location.search.slice(1);
+                var obj = {};
+
+                if (queryString) {
+                    queryString = queryString.split('#')[0];
+                    var arr = queryString.split('&');
+
+                    for (var i = 0; i < arr.length; i++) {
+                        var a = arr[i].split('=');
+                        var paramName = a[0];
+                        var paramValue = typeof(a[1]) === 'undefined' ? true : a[1];
+
+                        if (paramName.match(/\[(\d+)?\]$/)) {
+                            var key = paramName.replace(/\[(\d+)?\]/, '');
+                            if (!obj[key]) obj[key] = [];
+
+                            if (paramName.match(/\[\d+\]$/)) {
+                                var index = /\[(\d+)\]/.exec(paramName)[1];
+                                obj[key][index] = paramValue;
+                            } else {
+                                obj[key].push(paramValue);
+                            }
+                        } else {
+                            if (!obj[paramName]) {
+                                obj[paramName] = paramValue;
+                            } else if (obj[paramName] && typeof obj[paramName] === 'string') {
+                                obj[paramName] = [obj[paramName]];
+                                obj[paramName].push(paramValue);
+                            } else {
+                                obj[paramName].push(paramValue);
+                            }
+                        }
+                    }
+                }
+
+                return obj;
+            }
+
+            if (getAllUrlParams().irclickid) {
+                var date = new Date();
+                date.setTime(date.getTime() + (30 * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+                document.cookie = "irclickid=" + getAllUrlParams().irclickid + expires + "; path=/";
+            }
+        </script>
+        </template>
+        <div class="flex items-center gap-2 order-2" :class="{'max-lg:mt-[13px] max-xs:mt-0': openSearch}">
+                            <a href="https://www.videvo.net/es/premium-plans/#plans-and-pricing" class="hidden rounded-lg border-2 border-white/50 py-1 px-3 font-semibold text-white hover:border-white sm:block">
+                    Unirse a Videvo                </a>
+                <a href="/es/auth/login" class="rounded-lg py-1 px-3 font-semibold text-white/75 hover:text-white max-xs:pr-2 max-xs:text-sm ">
+                    Iniciar sesión                </a>
+                    </div>
+    </div>
+        <div class="flex"></div>
+    </header>
+<script>
+    function initHeader() {
+        return {
+            openSearch: false,
+            logout() {
+                localStorage.clear();
+                sessionStorage.clear();
+            },
+        }
+    }
+</script>
+    
+
+
+
+
+    <main class="flex-1">
+        <div class="mt-14 flex flex-1 flex-col lg-low-height:!flex-col lg:mt-16 xl:flex-row">
+        <!-- Left column -->
+        <div class="md:z-30 clip-wrapper clip-wrapper-transparent-overlay flex shrink-0
+            flex-col bg-gradient-to-t from-gray-50 to-white pb-6 lg-low-height:!relative lg-low-height:!top-0 lg-low-height:flex
+            lg-low-height:!flex-row lg-low-height:!max-w-none lg-low-height:!h-full lg-low-height:!w-full xl-high-height:justify-start
+            dp-res:max-w-full dp-res:justify-center dp-res:flex-row xl:sticky xl:top-16 xl-low-height:h-[120vh] xl-higher-height:h-screen xl:max-w-screen-md xl:flex-col w-full
+            xl:bg-gradient-to-l dp-res:py-8 dp-res:px-8 xl:px-12">
+
+            <div class="w-full shrink-0 dp-res:shrink xl:shrink-0 dp-res:max-w-[600px] xl:max-w-full lg-low-height:relative lg-low-height:flex lg-low-height:w-full lg-low-height:!max-w-[600px] lg-low-height:flex-col xl:max-w-none relative" id="clip-wrapper-player-actions">
+                <!-- Video player -->
+                <div class="bg-gray-50 lg:px-8 2xl:px-0">
+    <div class="aspect-w-16 aspect-h-9 relative mb-4 overflow-hidden bg-gray-100" style="-webkit-mask-image: -webkit-radial-gradient(white, black);">
+        <div class="absolute w-[120%] h-[120%] blur-[10px] bg-center" style="background-image:url(https://videocdn.cdnpk.net/excite/content/video/premium/video0521/thumbnails/GENERAL_SA_AERIAL_00080_large.jpg)"></div>
+        <video preload="none" class="absolute inset-0 z-10 h-full w-full object-contain focus:outline-none" poster="https://videocdn.cdnpk.net/excite/content/video/premium/video0521/thumbnails/GENERAL_SA_AERIAL_00080_large.jpg" controls autoplay muted>
+                            <source src="https://videocdn.cdnpk.net/excite/content/video/premium/video0521/large_watermarked/GENERAL_SA_AERIAL_00080_preview.mp4" type="video/mp4">
+                    </video>
+    </div>
+</div>
+
+
+                <!-- / Video player -->
+
+                <!-- Social -->
+                <div class="relative mb-8 flex items-center justify-between px-4 lg-low-height:mt-4 lg-high-height:mb-0 xl-high-height:mb-8 lg-low-height:mb-0" x-data="{ 'showModal': false, showTooltip: false }" >
+    <div x-show="showModal" @click.away="showModal = false" class="absolute top-8 right-0 z-10 m-2 flex flex-wrap items-center rounded border border-gray-200 bg-white py-2 shadow-lg lg:m-0 lg:w-full lg:py-4" id="show_more" x-cloak>
+        <div class="flex flex-1 flex-col border-r border-gray-200 py-2 px-4">
+            <label class="text-sm font-semibold text-gray-500 lg:mb-2">Duración</label>
+            <span class="text-sm font-semibold text-gray-900">00:23</span>
+        </div>
+        <div class="flex flex-1 flex-col border-r border-gray-200 py-2 px-4">
+            <label class="text-sm font-semibold text-gray-500 lg:mb-2">Resolución</label>
+            <span class="whitespace-nowrap text-sm font-semibold text-gray-900">5120 x 2700</span>
+        </div>
+        <div class="flex flex-1 flex-col border-r border-gray-200 py-2 px-4">
+            <label class="text-sm font-semibold text-gray-500 lg:mb-2">Tamaño</label>
+            <span class="text-sm font-semibold text-gray-900">2137 MB</span>
+        </div>
+        <div class="flex flex-1 flex-col border-r border-gray-200 py-2 px-4">
+            <label class="whitespace-nowrap text-sm font-semibold text-gray-500 lg:mb-2">Relación de aspecto</label>
+            <span class="text-sm font-semibold text-gray-900">256:135</span>
+        </div>
+        <div class="flex flex-1 flex-col border-r border-gray-200 py-2 px-4">
+            <label class="text-sm font-semibold text-gray-500 lg:mb-2">FPS</label>
+            <span class="text-sm font-semibold text-gray-900">30 FPS</span>
+        </div>
+        <div class="flex flex-1 flex-col py-2 px-4">
+            <label class="text-sm font-semibold text-gray-500 lg:mb-2">Formato</label>
+            <span class="text-sm font-semibold text-gray-900">HD</span>
+        </div>
+    </div>
+    <div class="flex items-center gap-2">
+        <span class="flex items-center overflow-hidden rounded border border-gray-800">
+            <span class="border-r border-gray-800 py-0.5 px-2 text-sm font-semibold">HD</span>
+            <span class="py-0.5 px-2 text-sm font-semibold">00:23</span>
+        </span>
+        <div x-data="{ open: false }" @click.away="open = false" class="relative text-gray-500">
+    <div @click="open = ! open">
+        <div class="relative inline-flex" x-data="{showTooltip: false}">
+                    <span class="relative inline-flex" x-on:mouseover="showTooltip = true" x-on:mouseleave="showTooltip = false">
+                        <button class="flex items-center px-4 py-1 font-semibold text-gray-600">
+                            <svg class="fill-current h-4 w-4" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.957 11.3203C13.0013 11.3203 12.1381 11.7239 11.5288 12.3696L6.59686 9.74036C6.65096 9.50214 6.67969 9.25436 6.67969 9C6.67969 8.74536 6.65093 8.49734 6.59668 8.25887L11.5286 5.63017C12.1379 6.27595 13.0012 6.67969 13.957 6.67969C15.7986 6.67969 17.2969 5.18143 17.2969 3.33984C17.2969 1.49825 15.7986 0 13.957 0C12.1154 0 10.6172 1.49825 10.6172 3.33984C10.6172 3.59409 10.6459 3.84177 10.6999 4.07992L5.76759 6.70887C5.15827 6.06357 4.29532 5.66016 3.33984 5.66016C1.49825 5.66016 0 7.15841 0 9C0 10.8416 1.49825 12.3398 3.33984 12.3398C4.2956 12.3398 5.15876 11.9362 5.76812 11.2905L10.7 13.9198C10.6459 14.158 10.6172 14.4058 10.6172 14.6602C10.6172 16.5017 12.1154 18 13.957 18C15.7986 18 17.2969 16.5017 17.2969 14.6602C17.2969 12.8186 15.7986 11.3203 13.957 11.3203ZM13.957 1.75781C14.8294 1.75781 15.5391 2.46751 15.5391 3.33984C15.5391 4.21218 14.8294 4.92188 13.957 4.92188C13.0847 4.92188 12.375 4.21218 12.375 3.33984C12.375 2.46751 13.0847 1.75781 13.957 1.75781ZM3.33984 10.582C2.46751 10.582 1.75781 9.87233 1.75781 9C1.75781 8.12767 2.46751 7.41797 3.33984 7.41797C4.21218 7.41797 4.92188 8.12767 4.92188 9C4.92188 9.87233 4.21218 10.582 3.33984 10.582ZM13.957 16.2422C13.0847 16.2422 12.375 15.5325 12.375 14.6602C12.375 13.7878 13.0847 13.0781 13.957 13.0781C14.8294 13.0781 15.5391 13.7878 15.5391 14.6602C15.5391 15.5325 14.8294 16.2422 13.957 16.2422Z" />
+</svg>                        </button>
+                        <template x-if="showTooltip" x-cloak>
+    <div class="tooltip max-md:!hidden">
+        Compartir
+    </div>
+</template>
+                    </span>
+                </div>
+    </div>
+
+    <div x-show="open">
+        <div class="absolute top-full left-0 z-30 flex w-48 flex-col rounded-lg border border-gray-200 bg-white p-2 shadow-lg" x-cloak>
+    <!-- Twitter -->
+    <a  class="flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-50 twitter-share"
+        target="_blank"
+        gtm-event="twitter_share"
+        gtm-label="video: los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura // category: "
+        gtm-category="Twitter"
+        data-label="video: los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura // category: "
+        href="https://twitter.com/intent/tweet?text=Free stock footage from @Videvo&url=https://www.videvo.net/&hashtags=filmmaking,stock,footage,free&related=videvo"
+        data-tw-href="https://www.videvo.net/"
+    >
+        <svg class="fill-current mr-2 h-7 w-7" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="#1DA1F2"/>
+<path d="M24 12.5381C23.4111 12.7991 22.7792 12.9761 22.1153 13.0552C22.7932 12.6491 23.3121 12.0051 23.5581 11.24C22.9222 11.616 22.2203 11.8891 21.4724 12.0371C20.8736 11.398 20.0217 11 19.0769 11C17.2642 11 15.7945 12.4701 15.7945 14.2823C15.7945 14.5393 15.8235 14.7903 15.8795 15.0303C13.152 14.8933 10.7335 13.5862 9.11477 11.6C8.83182 12.0841 8.67085 12.6481 8.67085 13.2502C8.67085 14.3893 9.25075 15.3943 10.1306 15.9824C9.59268 15.9644 9.08677 15.8164 8.64387 15.5703V15.6113C8.64387 17.2015 9.77566 18.5285 11.2764 18.8306C11.0014 18.9046 10.7115 18.9456 10.4115 18.9456C10.1996 18.9456 9.99462 18.9246 9.79365 18.8846C10.2116 20.1897 11.4234 21.1387 12.8591 21.1648C11.7363 22.0448 10.3206 22.5679 8.78285 22.5679C8.51791 22.5679 8.25694 22.5519 8 22.5229C9.45273 23.456 11.1774 24 13.0311 24C19.0689 24 22.3693 18.9976 22.3693 14.6593L22.3583 14.2343C23.0032 13.7742 23.5611 13.1962 24 12.5381Z" fill="white"/>
+</svg> Twitter
+    </a>
+    <!-- Facebook -->
+    <a  class="flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-50 facebook-share"
+        gtm-event="facebook_share"
+        gtm-label="video: los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura // category: "
+        gtm-category="Facebook"
+        data-label="video: los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura // category: "
+        href="javascript:void(0)"
+        onclick="postToFacebookFeed()"
+    >
+        <svg class="fill-current mr-2 h-7 w-7" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="#1877F2"/>
+<path d="M27 17C27 11.4766 22.5234 7 17 7C11.4766 7 7 11.4766 7 17C7 21.9922 10.6562 26.1289 15.4375 26.8789V19.8906H12.8984V17H15.4375V14.7969C15.4375 12.291 16.9297 10.9062 19.2148 10.9062C20.3086 10.9062 21.4531 11.1016 21.4531 11.1016V13.5625H20.1914C18.9492 13.5625 18.5625 14.334 18.5625 15.125V17H21.3359L20.8926 19.8906H18.5625V26.8789C23.3438 26.1289 27 21.9922 27 17Z" fill="white"/>
+<path d="M20.8926 19.8906L21.3359 17H18.5625V15.125C18.5625 14.334 18.9492 13.5625 20.1914 13.5625H21.4531V11.1016C21.4531 11.1016 20.3086 10.9062 19.2148 10.9062C16.9297 10.9062 15.4375 12.291 15.4375 14.7969V17H12.8984V19.8906H15.4375V26.8789C15.9473 26.959 16.4687 27 17 27C17.5313 27 18.0527 26.959 18.5625 26.8789V19.8906H20.8926Z" fill="#1877F2"/>
+</svg> Facebook
+    </a>
+    <!-- Copy Link -->
+    <a  href="javascript:void(0)"
+        @click="copyLink();"
+        class="flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-50"
+    >
+        <svg class="fill-current mx-2 h-5 w-5" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.42133 7.48006C9.15437 7.74699 9.15437 8.17984 9.42133 8.44679C9.69532 8.72078 10.1277 8.70716 10.3881 8.44679L13.4742 5.36078C14.1671 4.66778 14.1671 3.54023 13.4741 2.84726L11.1539 0.527033C10.4609 -0.165939 9.33339 -0.165885 8.64037 0.527033L5.55435 3.61305C5.28739 3.87998 5.28739 4.31283 5.55435 4.57979C5.82131 4.84677 6.2541 4.84677 6.52109 4.57979L9.60705 1.4938C9.76701 1.33387 10.0272 1.33387 10.1871 1.49377L12.5073 3.814C12.6673 3.97393 12.6673 4.23411 12.5073 4.39404L9.42133 7.48006ZM5.07106 8.93025C4.8041 8.66329 4.8041 8.23044 5.07106 7.96351L7.9713 5.06324C8.23828 4.79626 8.67108 4.79626 8.93804 5.06324C9.205 5.3302 9.205 5.76305 8.93804 6.02998L6.0378 8.93025C5.76072 9.20732 5.32169 9.18088 5.07106 8.93025ZM2.84734 13.4742L0.527137 11.154C-0.158453 10.4684 -0.174695 9.34231 0.527137 8.64048L3.62095 5.54667C3.88793 5.27968 4.32073 5.27968 4.58768 5.54667C4.85464 5.81365 4.85464 6.24645 4.58768 6.51341L1.4939 9.60724C1.33895 9.7622 1.34152 10.0349 1.4939 10.1873L3.8141 12.5075C3.97106 12.6644 4.23008 12.6715 4.39415 12.5075L7.48793 9.4137C7.75491 9.14677 8.18776 9.14675 8.45467 9.4137C8.72162 9.68069 8.72162 10.1135 8.45467 10.3804L5.36088 13.4742C4.73709 14.098 3.6047 14.2316 2.84734 13.4742Z" />
+</svg> Copy link
+        <!-- Confirmation link copied -->
+        <div class="flex hidden items-center justify-center w-full confirmation-module text-white bg-blue-500 absolute h-12 text-center m-auto z-40 top-0 left-0">
+            Link copied to clipboard
+        </div>
+    </a>
+    <!-- Email -->
+    <a  href="mailto:?subject=los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura&amp;body=https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738?filename="
+        title="Share by Email"
+        class="flex items-center rounded-lg p-2 text-gray-600 hover:bg-gray-50 email-share"
+        gtm-event="email_share"
+        gtm-label="video: los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura // category: "
+        gtm-category="Email"
+    >
+        <svg class="fill-current mx-2 h-5 w-5" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.1504 1.40039H1.84959C0.829728 1.40039 0 2.23012 0 3.24998V11.2744C0 12.2942 0.829728 13.124 1.84959 13.124H12.1504C13.1703 13.124 14 12.2942 14 11.2744V3.24998C14 2.23012 13.1703 1.40039 12.1504 1.40039ZM11.5711 2.82314L7.30169 7.09252C7.13526 7.25892 6.8645 7.25895 6.69807 7.09252L2.4287 2.82314H11.5711ZM12.1505 11.7014H1.84964C1.61428 11.7014 1.42281 11.5099 1.42281 11.2745V3.82937L5.69218 8.09875C6.05277 8.45933 6.52638 8.6396 7.00004 8.6396C7.47371 8.6396 7.94732 8.4593 8.30791 8.09875L12.5773 3.82934V11.2745C12.5773 11.5099 12.3858 11.7014 12.1505 11.7014Z"/>
+</svg> Email
+    </a>
+</div>
+    </div>
+</div>
+
+                        <div class="relative inline-flex" x-data="{showTooltip: false}">
+            <span class="relative" x-on:mouseover="showTooltip = true" x-on:mouseleave="showTooltip = false">
+                <a href="?filename="
+                    download
+                    class="text-gray-600 hover:text-gray-900"
+                    ga4-event="download_preview"
+                    ga4-file_name=""
+                    ga4-file_extension=""
+                    ga4-file_id="1490738"
+                    ga4-category="TBD"
+                    ga4-type="contributor"
+                    ga4-tags="{&quot;de&quot;: &quot;Haus, Stadt, Dorf, Küste, Ozean, Gasthaus, Meer, Wasser, Resort, Natur, Felsen, Ausflug, Planschen, Modern, Sprühen, Stein, Abstürzen, Gezackt, Robust, Welle, Element, Reise, Residenz, Küsten, Schön, Bedeckt, Gebäude, Himmel, Szenisch, Reiseziele, Sommer-, Ufer, Ferien, Oberfläche, Wohn, Entwicklung, Kleiner Mund, Panorama-, Tourismus, Afrika, Tag, Draußen, Südafrika, Luftaufnahme, Drohnenansicht, Gründer, Einrichtungsschuss&quot;, &quot;en&quot;: &quot;Kleinmond, panoramic, coast, south africa, overcast, sea, shore, coastal, shoreline, ocean, establishing shot, nature, drone view, scenic, Aerial view, africa, residence, house, town, residential, stone, tourism, outdoors, rock, vacation, surface, sky, guesthouse, travel, water, travel destinations, resort, jagged, building, rugged, day, wave, development, element, spray, beautiful, crashing, modern, trip, splashing, establisher, summer&quot;, &quot;es&quot;: &quot;casa, pueblo, costa, Oceano, casa de huespedes, mar, agua, recurso, Naturaleza, rock, orilla, viaje, salpicaduras, moderno, rociar, piedra, estrellarse, dentado, escabroso, ola, elemento, residencia, costero, hermosa, nublado, edificio, cielo, scenic, Destinos De Viaje, verano, apuntalar, vacaciones, superficie, residencial, desarrollo, Boca Pequeña, panoramic, turismo, África, day, al aire libre, south africa, Aerial View, vista de drones, establecedor, tiro de establecimiento, vista aérea view&quot;}"
+                    ga4-license="premium"
+                    ga4-author_name="21Aerials"
+                    ga4-location="es.video.detail"
+                    onclick="sendEvent(this);"
+                    >
+                    <svg class="fill-current h-4 w-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12.2188C7.79281 12.2188 7.59409 12.1364 7.44756 11.9899L4.79594 9.33828C4.49084 9.03319 4.49084 8.53853 4.79594 8.23344C5.10103 7.92834 5.59566 7.92834 5.90078 8.23344L7.21875 9.55141V0.78125C7.21875 0.349781 7.56853 0 8 0C8.43147 0 8.78125 0.349781 8.78125 0.78125V9.55141L10.0992 8.23344C10.4043 7.92834 10.899 7.92834 11.2041 8.23344C11.5092 8.53853 11.5092 9.03319 11.2041 9.33828L8.55244 11.9899C8.40591 12.1364 8.20722 12.2188 8 12.2188ZM14.4375 8.78125C14.4375 8.34978 14.7872 8 15.2188 8C15.6503 8 16 8.34978 16 8.78125V12.9688C16 14.4334 14.8084 15.625 13.3438 15.625H2.65625C1.19159 15.625 0 14.4334 0 12.9688V8.78125C0 8.34978 0.349781 8 0.78125 8C1.21272 8 1.5625 8.34978 1.5625 8.78125V12.9688C1.5625 13.5718 2.05316 14.0625 2.65625 14.0625H13.3438C13.9468 14.0625 14.4375 13.5718 14.4375 12.9688V8.78125Z"/>
+</svg>                </a>
+            </span>
+            <template x-if="showTooltip" x-cloak>
+    <div class="tooltip max-md:!hidden">
+        <span class="capitalize">Vista previa con marca de agua</span>
+    </div>
+</template>
+        </div>
+            </div>
+
+    <div class="flex items-center gap-4 relative">
+
+        <div class="flex" @keydown.escape="showModal = false">
+            <span class="relative inline-flex" x-on:mouseover="showTooltip = true" x-on:mouseleave="showTooltip = false">
+                <button class="text-gray-600 hover:text-gray-900"
+                    @click="showModal = true"
+                    gtm-event="click_on_secondary_actions"
+                    gtm-label="Secondary Action"
+                    ga4-event="more_info"
+                    ga4-file_name="general_sa_aerial_00080.mov"
+                    ga4-file_id="1490738"
+                    ga4-category="TBD"
+                    ga4-type="contributor"
+                    ga4-tags="{&quot;de&quot;: &quot;Haus, Stadt, Dorf, Küste, Ozean, Gasthaus, Meer, Wasser, Resort, Natur, Felsen, Ausflug, Planschen, Modern, Sprühen, Stein, Abstürzen, Gezackt, Robust, Welle, Element, Reise, Residenz, Küsten, Schön, Bedeckt, Gebäude, Himmel, Szenisch, Reiseziele, Sommer-, Ufer, Ferien, Oberfläche, Wohn, Entwicklung, Kleiner Mund, Panorama-, Tourismus, Afrika, Tag, Draußen, Südafrika, Luftaufnahme, Drohnenansicht, Gründer, Einrichtungsschuss&quot;, &quot;en&quot;: &quot;Kleinmond, panoramic, coast, south africa, overcast, sea, shore, coastal, shoreline, ocean, establishing shot, nature, drone view, scenic, Aerial view, africa, residence, house, town, residential, stone, tourism, outdoors, rock, vacation, surface, sky, guesthouse, travel, water, travel destinations, resort, jagged, building, rugged, day, wave, development, element, spray, beautiful, crashing, modern, trip, splashing, establisher, summer&quot;, &quot;es&quot;: &quot;casa, pueblo, costa, Oceano, casa de huespedes, mar, agua, recurso, Naturaleza, rock, orilla, viaje, salpicaduras, moderno, rociar, piedra, estrellarse, dentado, escabroso, ola, elemento, residencia, costero, hermosa, nublado, edificio, cielo, scenic, Destinos De Viaje, verano, apuntalar, vacaciones, superficie, residencial, desarrollo, Boca Pequeña, panoramic, turismo, África, day, al aire libre, south africa, Aerial View, vista de drones, establecedor, tiro de establecimiento, vista aérea view&quot;}"
+                    ga4-license="premium"
+                    ga4-author_name="21Aerials"
+                    ga4-location="es.video.detail"
+                    onclick="if( document.getElementById('show_more').style.display == 'none' ){ sendEvent(this); }"
+                >
+                    <svg class="fill-current h-5 w-5" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M2.34313 13.6569C3.85416 15.1678 5.86313 16 8 16C10.1369 16 12.1458 15.1678 13.6569 13.6569C15.1678 12.1458 16 10.1369 16 8C16 5.86313 15.1678 3.85416 13.6569 2.34313C12.1458 0.832156 10.1369 0 8 0C5.86313 0 3.85416 0.832156 2.34313 2.34313C0.832156 3.85416 0 5.86313 0 8C0 10.1369 0.832156 12.1458 2.34313 13.6569ZM1.5625 8C1.5625 4.45034 4.45034 1.5625 8 1.5625C11.5497 1.5625 14.4375 4.45034 14.4375 8C14.4375 11.5497 11.5497 14.4375 8 14.4375C4.45034 14.4375 1.5625 11.5497 1.5625 8ZM8.3125 12.5625C7.88103 12.5625 7.53125 12.2127 7.53125 11.7812V7.8125H6.75C6.31853 7.8125 5.96875 7.46272 5.96875 7.03125C5.96875 6.59978 6.31853 6.25 6.75 6.25H8.3125C8.74397 6.25 9.09375 6.59978 9.09375 7.03125V11.7812C9.09375 12.2127 8.74397 12.5625 8.3125 12.5625ZM7.0625 4.375C7.0625 4.89194 7.48306 5.3125 8 5.3125C8.51694 5.3125 8.9375 4.89194 8.9375 4.375C8.9375 3.85806 8.51694 3.4375 8 3.4375C7.48306 3.4375 7.0625 3.85806 7.0625 4.375Z" /></svg>                </button>
+                <template x-if="showTooltip" x-cloak>
+    <div class="tooltip max-md:!hidden">
+        Más información
+    </div>
+</template>
+            </span>
+        </div>
+
+
+
+        <!-- Actions -->
+        <div class="flex gap-x-2 items-center" >
+            <div class="action-btn relative transition-all duration-300 flex items-center"
+                x-data="{showTooltip: false}"
+                x-on:mouseover="showTooltip = true"
+                x-on:mouseleave="showTooltip = false">
+
+                                <button x-data
+                    id="collection"
+                    class="add-icon overflow-hidden h-[24px] w-[24px] bg-gray-700"
+                    @click.stop.prevent="$dispatch('showmustlogincollections')">
+                </button>
+                                <template x-if="showTooltip" x-cloak>
+                    <div class="tooltip max-md:!hidden">Añadir a la colección</div>
+                </template>
+            </div>
+
+            <div class="action-btn relativetransition-all duration-300 flex items-center"
+                x-data="{showTooltip: false}"
+                x-on:mouseover="showTooltip = true"
+                x-on:mouseleave="showTooltip = false" >
+
+                                <button x-data
+                    id="collection"
+                    class="love-icon overflow-hidden h-[24px] w-[24px] bg-gray-700"
+                    @click.stop.prevent="$dispatch('showmustloginfavorites')">
+                </button>
+                                <template x-if="showTooltip" x-cloak>
+                    <div class="tooltip max-md:!hidden">Añadir a favoritos</div>
+                </template>
+            </div>
+        </div>
+        <!-- / Actions -->
+
+    </div>
+</div>
+
+                <!-- / Social -->
+            </div>
+
+            <div class="px-4 dp-res:max-w-[360px] xl:max-w-full lg-low-height:max-w-[520px] lg:ml-4 lg:py-4 xl:py-0" x-data="{ open: false }">
+                <!-- Title -->
+                <h1 class="xk:line-clamp-1 mb-2 text-center text-xl font-semibold leading-tight text-gray-900 line-clamp-2">Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar</h1>
+<p x-show="open" class="mb-4 text-center leading-tight text-gray-600 xl:!block">Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura</p>
+
+    <div class="my-4 flex items-center justify-center">
+        <a href="https://www.videvo.net/es/author/21aerials/#rs=detail-author" class="group flex items-center text-sm font-semibold text-gray-600">
+            <img src="https://videocdn.cdnpk.net/harmony/content/avatars/21Aerials-logo.jpg" alt="" class="mr-2 h-8 w-8 rounded-full">
+            by <span class="ml-1 text-gray-900 group-hover:text-blue-400">21Aerials</span>
+        </a>
+    </div>
+                <!-- / Title -->
+
+                <!-- Download button -->
+                <div class="relative mx-auto mt-4 w-full lg:mt-0 lg:max-w-[20rem] lg:w-full" x-data="{'showRegisterModal': false}">
+    <button x-on:click="showRegisterModal = true;" class="flex h-12 w-full items-center justify-center rounded-lg bg-green-500 font-semibold text-white hover:bg-green-600 focus:outline-none"
+        onclick="trackCustom('download-attempt', {&quot;id&quot;:1490738,&quot;userid&quot;:null,&quot;userPremium&quot;:null,&quot;fromView&quot;:&quot;resource_detail&quot;,&quot;resourceType&quot;:&quot;video&quot;,&quot;ga_client_id&quot;:null,&quot;r&quot;:0.2358059842306217,&quot;language&quot;:&quot;es&quot;,&quot;term&quot;:&quot;&quot;} )">
+        <svg class="fill-current mr-1 h-5 w-5" viewBox="-120 0 512 512.00115" xmlns="http://www.w3.org/2000/svg"><path d="m270.214844 180.054688c-2.628906-4.816407-7.679688-7.816407-13.167969-7.816407h-54.425781l24.753906-154.871093c1.082031-6.773438-2.570312-13.417969-8.867188-16.136719-6.292968-2.71875-13.640624-.820313-17.828124 4.613281l-197.5625 256.398438c-3.488282 4.527343-4.097657 10.644531-1.578126 15.777343 2.523438 5.128907 7.746094 8.378907 13.460938 8.378907h85.816406l-57.566406 206.574218c-1.992188 7.144532 1.539062 14.675782 8.304688 17.710938 1.988281.890625 4.074218 1.316406 6.136718 1.316406 4.96875 0 9.78125-2.476562 12.621094-6.882812l199.351562-309.761719c2.96875-4.613281 3.179688-10.484375.550782-15.300781zm0 0"/></svg>            Descarga Premium            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg class="fill-current absolute h-4 w-4 right-0 mr-4" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 240.811 240.811" style="enable-background:new 0 0 240.811 240.811;" xml:space="preserve">
+<g>
+	<path id="Expand_More" d="M220.088,57.667l-99.671,99.695L20.746,57.655c-4.752-4.752-12.439-4.752-17.191,0
+		c-4.74,4.752-4.74,12.451,0,17.203l108.261,108.297l0,0l0,0c4.74,4.752,12.439,4.752,17.179,0L237.256,74.859
+		c4.74-4.752,4.74-12.463,0-17.215C232.528,52.915,224.828,52.915,220.088,57.667z"/>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+	<g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>    </button>
+    <template x-teleport="body" >
+        <div class="fixed w-full h-full top-0 left-0 flex items-center justify-center z-50" style="z-index:60 !important;" x-show="showRegisterModal" x-cloak>
+            <div class="absolute w-full h-full bg-gray-900 opacity-50"></div>
+            <div class="z-50 bg-white rounded-lg shadow-lg p-6 m-4 md:max-w-xl md:p-12 relative" @click.outside="showRegisterModal = false">
+                <button x-on:click="showRegisterModal = false" class="py-3 px-3 text-black hover:text-gray-600 absolute top-[10px] right-[10px]">
+                    <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512">
+    <path d="M242.355 397l127.987-127.987c9.763-9.763 9.763-25.592 0-35.355-9.764-9.763-25.592-9.763-35.355 0L207 361.644 79.013 233.658c-9.764-9.763-25.592-9.763-35.355 0s-9.763 25.592 0 35.355l127.986 127.986L43.658 524.986c-9.763 9.763-9.763 25.592 0 35.355 9.764 9.763 25.592 9.763 35.355 0l127.986-127.986 127.987 127.987c9.764 9.763 25.592 9.763 35.355 0s9.763-25.592 0-35.355L242.355 397z">
+    </path>
+</svg>                </button>
+                <div class="flex flex-col items-center">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full bg-green-500">
+                        <svg class="fill-current h-6 w-6 text-white" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12.2188C7.79281 12.2188 7.59409 12.1364 7.44756 11.9899L4.79594 9.33828C4.49084 9.03319 4.49084 8.53853 4.79594 8.23344C5.10103 7.92834 5.59566 7.92834 5.90078 8.23344L7.21875 9.55141V0.78125C7.21875 0.349781 7.56853 0 8 0C8.43147 0 8.78125 0.349781 8.78125 0.78125V9.55141L10.0992 8.23344C10.4043 7.92834 10.899 7.92834 11.2041 8.23344C11.5092 8.53853 11.5092 9.03319 11.2041 9.33828L8.55244 11.9899C8.40591 12.1364 8.20722 12.2188 8 12.2188ZM14.4375 8.78125C14.4375 8.34978 14.7872 8 15.2188 8C15.6503 8 16 8.34978 16 8.78125V12.9688C16 14.4334 14.8084 15.625 13.3438 15.625H2.65625C1.19159 15.625 0 14.4334 0 12.9688V8.78125C0 8.34978 0.349781 8 0.78125 8C1.21272 8 1.5625 8.34978 1.5625 8.78125V12.9688C1.5625 13.5718 2.05316 14.0625 2.65625 14.0625H13.3438C13.9468 14.0625 14.4375 13.5718 14.4375 12.9688V8.78125Z"/>
+</svg>                    </div>
+                    <h2 class="text-2xl font-semibold">
+                                                    Regístrate para descargar                                            </h2>
+
+                    <div class="bg-[#ececec] rounded-lg p-5 mt-6 mb-4 flex flex-col items-center">
+                        <div class="font-semibold mt-2 text-lg">
+                            Disfruta de descargas Premium ilimitadas                        </div>
+                        <div class="px-4 flex flex-col align-start mt-2">
+                            <p class="flex items-center">
+                                <svg class="fill-current h-3 font-semibold w-3 text-[#57aa24] mr-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                                Accede al catálogo Premium                            </p>
+                            <p class="flex items-center">
+                                <svg class="fill-current h-3 font-semibold w-3 text-[#57aa24] mr-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                                Licencia sin derechos de autor                            </p>
+                            <p class="flex items-center">
+                                <svg class="fill-current h-3 font-semibold w-3 text-[#57aa24] mr-2" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M4.89321 13.6583C4.64475 13.6583 4.39628 13.5635 4.20669 13.3739L0.284359 9.45158C-0.0947864 9.07244 -0.0947864 8.45768 0.284359 8.07857C0.663544 7.69939 1.27822 7.69939 1.65737 8.07857L4.89384 11.3151L14.3433 1.88374C14.7227 1.50494 15.3375 1.50549 15.7163 1.88502C16.0951 2.26452 16.0945 2.87927 15.715 3.25803L5.57908 13.3745C5.38956 13.5637 5.14133 13.6583 4.89321 13.6583Z"/>
+</svg>                                No necesita atribución                            </p>
+                        </div>
+
+                        <div class="flex flex-col gap-4 mt-4">
+                            <a href="https://www.videvo.net/es/premium-plans/#plans-and-pricing" class="relative flex w-full items-center justify-center rounded-md bg-blue-500 py-3 px-14 font-semibold text-white">
+                                ¡Vamos allá!                            </a>
+                            <a  class="relative flex w-full items-center justify-center px-14 text-grey-600 cursor-pointer underline" x-on:click="showRegisterModal = false">
+                                No, lo haré más tarde                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+                <!-- / Download button -->
+
+                <!-- Licenses -->
+                <div class="mt-8 flex flex-col-reverse items-center rounded-lg border border-gray-200 p-4 xl:flex-row">
+    <div x-show="open" class="mt-4 w-full border-t border-gray-200 pt-4 xl:mt-0 xl:mr-4 xl:!block xl:w-1/3 xl:border-t-0 xl:border-r xl:pt-0 xl:pr-4">
+                    <div class="mb-1 flex items-center font-semibold text-gray-900">
+                <svg class="fill-current mr-1 h-8 w-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 44" version="1.1">
+    <path d="M27.867895,34.4132313 L30.4783506,31.611 L36.2244609,25.445013 L36.2244609,25.445013 L36.2395595,25.4285714 L39,28.0742154 L27.8878669,40 L20.7857143,32.4876926 L23.5271669,29.8218178 L27.867895,34.4132313 Z M33.2130425,12.5961384 C34.4524596,12.9299204 35.4193585,13.8924333 35.7514723,15.1230537 C35.9326606,15.7992704 36.0600305,16.6943678 36.1461398,17.6179375 L36.1640792,17.8030074 L36.203546,18.265682 L36.2178975,18.4507518 C36.3345039,20.0772311 36.3488554,21.6004983 36.3506494,21.9332681 L36.3506494,22.0667319 C36.3496579,22.2575281 36.3442828,22.8396747 36.3178683,23.6082995 C35.8046512,23.586951 35.2851162,23.781041 34.9069579,24.1868891 L27.8577143,31.7515714 L24.850737,28.5705129 C24.1527689,27.8322357 22.9857233,27.8077042 22.2573479,28.5159994 L19.5158953,31.1818741 C19.2837875,31.4075831 19.1246019,31.6802902 19.0389597,31.9704493 C18.2945558,31.9561566 17.4645589,31.9361949 16.620861,31.9074651 L16.3158907,31.896788 L16.1598176,31.8896699 L15.8530533,31.8772133 L15.546289,31.8647567 C13.555012,31.7775603 11.6588139,31.6369784 10.7851635,31.402082 C9.54562812,31.0695996 8.57841107,30.107448 8.24673377,28.8769463 C8.04760606,28.1348874 7.91485426,27.1223418 7.82515709,26.1044577 L7.81080555,25.9176083 L7.796454,25.7325385 C7.70791858,24.5267358 7.65885831,23.3184003 7.64935065,22.1094403 L7.64935065,21.8905597 C7.65293854,21.5079633 7.66729008,20.1857817 7.76416302,18.7265771 L7.77672062,18.5432868 L7.78210245,18.4507518 L7.796454,18.265682 L7.83592075,17.8030074 L7.85386018,17.6179375 C7.93996946,16.6943678 8.06733944,15.7974909 8.24852771,15.1230537 C8.57965043,13.8918673 9.54696627,12.9289393 10.7869575,12.5961384 C11.6606078,12.3648011 13.5568059,12.2224397 15.548083,12.1334638 L15.8530533,12.1210072 L16.1616116,12.1103301 L16.3158907,12.1049915 L16.622655,12.0925349 C18.329965,12.0380364 20.037974,12.0077815 21.746157,12.0017795 L22.0923881,12.0017795 L22.0923881,12 L22.252049,12 C23.7266704,12.0053386 31.1984442,12.0587241 33.2130425,12.5961384 Z M18.8436465,17.32 L18.8436465,26.6898473 L27.046811,22.0068684 L18.8436465,17.32 Z" />
+</svg> YouTube Safe
+            </div>
+                    <div class="mb-1 flex items-center font-semibold text-gray-900">
+                <svg class="fill-current mr-1 h-8 w-8" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8 22C8 14.2544 14.2812 8 22 8C26.6753 8 30.8231 10.2945 33.3672 13.8252L28.7479 18.4445C27.4626 16.0686 24.9287 14.4456 22 14.4456C17.7637 14.4456 14.3533 17.8414 14.3533 22C14.3533 26.1586 17.7637 29.5544 22 29.5544C24.3063 29.5544 26.3678 28.5479 27.7675 26.9599L32.2953 31.4877C29.735 34.2636 26.0671 36 22 36C14.2812 36 8 29.7456 8 22Z" />
+</svg> Commercial and Editorial Use
+            </div>
+            </div>
+    <div class="xl:mb-0 xl:w-2/3 xl:pl-4">
+        <h5 class="mb-2 flex items-center font-semibold text-gray-900">
+            <svg class="fill-current mr-2 h-5 w-5" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M9.7382 8.4024C9.09274 8.40224 8.46397 8.60746 7.94288 8.98836C7.42179 9.36926 7.03542 9.90608 6.83966 10.5211C6.64391 11.1362 6.64893 11.7976 6.85401 12.4096C7.05908 13.0216 7.45357 13.5525 7.98038 13.9254V17.5852C7.98795 17.6927 8.03415 17.7939 8.11046 17.87H8.11398C8.1827 17.9367 8.27107 17.9796 8.36603 17.9922C8.46099 18.0049 8.55751 17.9867 8.64132 17.9403L9.72765 17.304L10.8175 17.9403C10.9008 17.9864 10.9967 18.0045 11.091 17.9918C11.1854 17.9791 11.2732 17.9364 11.3413 17.87C11.4222 17.7926 11.489 17.6872 11.496 17.5817V13.9219C12.0236 13.5497 12.4189 13.0191 12.6245 12.4071C12.83 11.795 12.8352 11.1334 12.6393 10.5181C12.4434 9.90293 12.0565 9.36615 11.5349 8.98571C11.0132 8.60526 10.3839 8.40094 9.7382 8.4024ZM9.7382 10.1602C9.99199 10.1602 10.2401 10.2355 10.4511 10.3765C10.6621 10.5175 10.8266 10.7179 10.9237 10.9524C11.0208 11.1868 11.0463 11.4448 10.9967 11.6938C10.9472 11.9427 10.825 12.1713 10.6456 12.3508C10.4661 12.5302 10.2375 12.6524 9.98854 12.702C9.73962 12.7515 9.48161 12.7261 9.24714 12.6289C9.01266 12.5318 8.81225 12.3673 8.67125 12.1563C8.53025 11.9453 8.45499 11.6972 8.45499 11.4434C8.45592 11.1034 8.59141 10.7775 8.83186 10.5371C9.07231 10.2966 9.39816 10.1611 9.7382 10.1602Z"/><path d="M16.3125 4.34883C16.309 4.33125 16.309 4.31367 16.3055 4.29609V4.28203L16.2949 4.22578C16.2915 4.20674 16.2868 4.18795 16.2809 4.16953C16.281 4.16763 16.2808 4.16571 16.2802 4.1639C16.2796 4.16208 16.2786 4.16041 16.2773 4.15898C16.2743 4.14101 16.2696 4.12335 16.2633 4.10625C16.2633 4.10532 16.2629 4.10442 16.2623 4.10376C16.2616 4.1031 16.2607 4.10273 16.2598 4.10273C16.2555 4.08466 16.2496 4.06701 16.2422 4.05C16.24 4.04836 16.2382 4.04624 16.237 4.0438C16.2358 4.04136 16.2352 4.03867 16.2352 4.03594C16.2283 4.02 16.2201 4.00471 16.2105 3.99023V3.9832L16.1824 3.9375L16.1719 3.92344C16.1637 3.90859 16.1543 3.89447 16.1438 3.88125C16.1438 3.87773 16.1402 3.87773 16.1402 3.87422L16.1051 3.83203L16.0945 3.81797L16.0559 3.77578L12.5402 0.260156L12.498 0.221484L12.484 0.210938L12.4418 0.175781H12.4348L12.3926 0.140625L12.3785 0.130078L12.3328 0.101953C12.3293 0.101953 12.3258 0.101953 12.3258 0.0984375L12.2801 0.0773438L12.266 0.0703125L12.2133 0.0527344C12.2133 0.051802 12.2129 0.0509078 12.2123 0.0502485C12.2116 0.0495891 12.2107 0.0492187 12.2098 0.0492187L12.157 0.0351562H12.1465L12.0902 0.0175781H12.0867L12.034 0.00703125H12.0199L11.9672 0H4.11328C3.50751 0.000929818 2.92681 0.241985 2.49846 0.670334C2.07011 1.09868 1.82905 1.67938 1.82812 2.28516V15.0117C1.82905 15.6175 2.07011 16.1982 2.49846 16.6265C2.92681 17.0549 3.50751 17.2959 4.11328 17.2969H6.22266V15.5391H4.11328C3.97342 15.5391 3.83929 15.4835 3.74039 15.3846C3.6415 15.2857 3.58594 15.1516 3.58594 15.0117V2.28516C3.58594 2.1453 3.6415 2.01116 3.74039 1.91227C3.83929 1.81337 3.97342 1.75781 4.11328 1.75781H11.0391V4.39453C11.0391 4.62763 11.1317 4.85119 11.2965 5.01601C11.4613 5.18084 11.6849 5.27344 11.918 5.27344H14.5547V15.0117C14.5547 15.1516 14.4991 15.2857 14.4002 15.3846C14.3013 15.4835 14.1672 15.5391 14.0273 15.5391H13.2539V17.2969H14.0273C14.6331 17.2959 15.2138 17.0549 15.6422 16.6265C16.0705 16.1982 16.3116 15.6175 16.3125 15.0117V4.34883Z"/></svg> Royalty Free
+        </h5>
+        <p class="mb-1 text-sm text-gray-600">Use in as many projects as you like and is yours to keep. However the copyright remains with the creator. <a href="https://help.videvo.net/article/29-royalty-free-license#rs=detail-learn-more" class="underline hover:no-underline">Saber más</a></p>
+            </div>
+</div>
+
+<div class="flex items-center justify-center xl:hidden">
+    <button x-on:click="open = ! open" class="p-4 text-gray-600 underline">
+        <span x-show="open">
+            Ocultar detalles        </span>
+        <span x-show="!open">
+            Mostrar detalles        </span>
+    </button>
+</div>
+                <!-- / Licenses -->
+            </div>
+        </div>
+        <!-- / Left column -->
+
+        <!-- Right column -->
+        <div class="py-8 px-6 sm:px-8 xl:px-12 w-full flex flex-col justify-between" x-data="{ tab: 'tab1', showSameClips: false }">
+
+            <div class="flex flex-col">
+                <!-- iStock Related -->
+                                    <div class="min-h-[182px]">
+                        <div x-data class="max-w-full pt-0 pb-5 md:py-5">
+    <div class="mb-1 flex justify-between items-center">
+        <p class="text-sm font-semibold text-gray-500 istock-event">Patrocinado por iStock</p>
+        <div x-data="{
+  modalContent: '',
+  modalElement: null,
+  loadModalContent: function() {
+    if (!this.modalContent) {
+      fetch('/modal/istock')
+        .then(response => response.text())
+        .then(html => {
+          this.modalContent = html;
+          if (!this.modalElement) {
+            this.modalElement = document.createElement('div');
+            this.modalElement.innerHTML = this.modalContent;
+            document.body.appendChild(this.modalElement);
+            this.addCloseListener();
+          }
+        });
+    } else {
+      if (!this.modalElement) {
+        this.modalElement = document.createElement('div');
+        this.modalElement.innerHTML = this.modalContent;
+        document.body.appendChild(this.modalElement);
+        this.addCloseListener();
+      }
+    }
+  },
+  addCloseListener: function() {
+    const closeModal = function(e) {
+      if (!e.target.closest('.istock-modal')) {
+        this.modalElement.parentNode.removeChild(this.modalElement);
+        document.body.removeEventListener('click', closeModal);
+        this.modalElement = null;
+        this.modalContent = '';
+      }
+    }.bind(this);
+    document.body.addEventListener('click', closeModal);
+  }
+}">
+  <p class="font-semibold text-orange-500 underline cursor-pointer text-sm" @click="loadModalContent()" onclick="const detailData = JSON.parse('{\u0022sponsor_pixel\u0022:\u0022istock\u0022,\u0022sponsor\u0022:\u0022istock\u0022,\u0022term\u0022:\u0022\u0022,\u0022r\u0022:0.8019643932590095}'); detailData.type='reverse_search'; detailData.action = 'clk'; detailData.sponsor_pixel = 'coupon_direct_all'; trackCustomiStock(detailData);">LIMITED DEAL: Save 20% on 4K Video from iStock</p>
+</div>
+
+    </div>
+
+    <div class="flex flex-nowrap lg:flex-wrap">
+
+        <!-- Resources list -->
+        <template x-if="$store.istock.fetched">
+            <div class="flex w-full justify-between gap-x-2 snap-x snap-mandatory lg:snap-none overflow-x-scroll lg:overflow-x-auto" >
+
+                <template x-for="(item, index) in $store.istock.scopedItems.slice(0, 6)" :key="item.id">
+                    <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block"
+                                                    :class="{'lg:!hidden': index == 3 || index == 4, 'xl:max-istock-6:!hidden': index == 5}"
+                                                x-on:mouseenter="item.showPreview = true"
+                        x-on:mouseleave="item.showPreview = false" >
+
+                        <a :href="$store.istock.urlWithParams(item, 'detail')" target="_blank"
+                            class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event"
+                            data-cypress="istockItem"
+                            onclick="emitClickEvents()">
+
+                            <img :src="item.thumbnail" class="absolute inset-0 h-full w-full object-cover bg-[#eee]" :alt="item.title" loading="lazy" >
+
+                            <div class="pointer-events-none absolute !top-0 left-0 right-0 z-20 h-14 -translate-y-14 bg-gradient-to-b from-black/50 to-transparent px-4 py-2 transition-all duration-300 group-hover:translate-y-0">
+                                <p class="truncate text-white [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]" x-text="item.title"></p>
+                            </div>
+
+                            <template x-if="index != 5 && item.showPreview === true">
+                                <video preload="none" muted="true" class="absolute inset-0 z-10 h-full w-full object-cover" loop playsinline autoplay>
+                                    <source :src="item.video" >
+                                </video>
+                            </template>
+                        </a>
+
+                        <!-- View more button -->
+                        <template x-if="index == 5">
+                            <a :href="$store.istock.viewmoreUrl('detail')" target="_blank"
+                                class="istock-event absolute inset-0 z-20 flex items-center justify-center bg-black/75 hover:bg-black/90"
+                                onclick="emitClickEvents()" >
+
+                                <span class="flex items-center text-base font-semibold text-white pl-3">
+                                    Ver más <svg class="fill-current h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="-49 141 512 512"><defs/><path d="M226.6 397l-92.3 92.3a25 25 0 0035.4 35.4l110-110a25 25 0 000-35.4l-110-110a25 25 0 00-35.4 35.4l92.3 92.3z"/></svg>                                </span>
+                            </a>
+                        </template>
+                        <!-- / View more button -->
+                    </div>
+                </template>
+            </div>
+        </template>
+        <!-- / Resources list -->
+
+        <!-- Placeholder list -->
+        <div x-show="!$store.istock.fetched" class="flex w-full justify-between gap-x-2 snap-x snap-mandatory lg:snap-none overflow-x-scroll lg:overflow-x-auto">
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '', 'xl:max-istock-6:!hidden': '' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '', 'xl:max-istock-6:!hidden': '' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '', 'xl:max-istock-6:!hidden': '' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '1', 'xl:max-istock-6:!hidden': '' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '1', 'xl:max-istock-6:!hidden': '' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+            
+                <div class="relative w-[45%] shrink-0 sm:w-[30%] lg:flex-1 xl:inline-block bg-[#eee]"
+                                            :class="{'lg:!hidden': '', 'xl:max-istock-6:!hidden': '1' }"
+                     >
+
+                    <div class="group aspect-w-16 aspect-h-9 flex overflow-hidden bg-white istock-event">
+                        <div class="absolute inset-0 h-full w-full object-cover bg-[#eee] w-full h-full flex items-center justify-center">
+                            <svg class="fill-current h-6 w-6 animate-spin fill-current text-gray-300" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.79999 16C4.38771 16 0.799988 12.4123 0.799988 8C0.799988 3.58772 4.38771 0 8.79999 0C11.4798 0 13.971 1.33333 15.4579 3.56579C15.7956 4.07018 15.6596 4.75 15.1553 5.08772C14.6509 5.42544 13.971 5.28947 13.6333 4.78509C12.5544 3.16228 10.743 2.19298 8.79999 2.19298C5.59823 2.19298 2.99297 4.79825 2.99297 8C2.99297 11.2018 5.59823 13.807 8.79999 13.807C10.7474 13.807 12.5544 12.8377 13.6333 11.2149C13.971 10.7105 14.6509 10.5746 15.1553 10.9123C15.6596 11.25 15.7956 11.9298 15.4579 12.4342C13.971 14.6667 11.4798 16 8.79999 16Z"/>
+</svg>                        </div>
+                    </div>
+                </div>
+                    </div>
+        <!-- / Placeholder list -->
+    </div>
+</div>
+
+                    </div>
+                                <!-- / iStock Related -->
+
+                <!-- Buttons -->
+                <div class="mb-4 flex items-center gap-6 order-last">
+                    <button x-on:click.prevent="tab = 'tab1'" class="border-b-4 pb-1 font-semibold" :class="{ 'text-gray-900 hover:text-blue-400 border-transparent': tab !== 'tab1', 'text-blue-400 border-blue-400': tab === 'tab1' }">
+                        Clips similares                    </button>
+                                            <button x-on:click.prevent="tab = 'tab2'" class="border-b-4 pb-1 font-semibold" :class="{ 'text-gray-900 hover:text-blue-400 border-transparent': tab !== 'tab2', 'text-blue-400 border-blue-400': tab === 'tab2' }">
+                            Del mismo proyecto                        </button>
+                                    </div>
+                <!-- / Buttons -->
+            </div>
+
+            <!-- Similar_same content -->
+            <div x-show="tab === 'tab1'" class="flex-auto min-h-screen">
+                <div wire:id="XhMSzOdTP7TX0hOFU8Up" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;XhMSzOdTP7TX0hOFU8Up&quot;,&quot;name&quot;:&quot;similar-same&quot;,&quot;locale&quot;:&quot;es&quot;,&quot;path&quot;:&quot;es\/video\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\/1490738&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;dispatches&quot;:[{&quot;event&quot;:&quot;content-updated&quot;,&quot;data&quot;:null}],&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;899a52d7&quot;,&quot;data&quot;:{&quot;videoId&quot;:1490738,&quot;page&quot;:0,&quot;type&quot;:&quot;similar&quot;,&quot;clips&quot;:[],&quot;showLoadMore&quot;:false,&quot;firstHashWasCachedBefore&quot;:false,&quot;readyToLoad&quot;:false,&quot;videoSlugEn&quot;:&quot;forwards-fly-above-rugged-sea-coast-waves-rolling-to-coastal-rocks-and-splashing-to-height&quot;,&quot;videoSerieId&quot;:472,&quot;videoTags&quot;:&quot;{\&quot;de\&quot;: \&quot;Haus, Stadt, Dorf, K\u00fcste, Ozean, Gasthaus, Meer, Wasser, Resort, Natur, Felsen, Ausflug, Planschen, Modern, Spr\u00fchen, Stein, Abst\u00fcrzen, Gezackt, Robust, Welle, Element, Reise, Residenz, K\u00fcsten, Sch\u00f6n, Bedeckt, Geb\u00e4ude, Himmel, Szenisch, Reiseziele, Sommer-, Ufer, Ferien, Oberfl\u00e4che, Wohn, Entwicklung, Kleiner Mund, Panorama-, Tourismus, Afrika, Tag, Drau\u00dfen, S\u00fcdafrika, Luftaufnahme, Drohnenansicht, Gr\u00fcnder, Einrichtungsschuss\&quot;, \&quot;en\&quot;: \&quot;Kleinmond, panoramic, coast, south africa, overcast, sea, shore, coastal, shoreline, ocean, establishing shot, nature, drone view, scenic, Aerial view, africa, residence, house, town, residential, stone, tourism, outdoors, rock, vacation, surface, sky, guesthouse, travel, water, travel destinations, resort, jagged, building, rugged, day, wave, development, element, spray, beautiful, crashing, modern, trip, splashing, establisher, summer\&quot;, \&quot;es\&quot;: \&quot;casa, pueblo, costa, Oceano, casa de huespedes, mar, agua, recurso, Naturaleza, rock, orilla, viaje, salpicaduras, moderno, rociar, piedra, estrellarse, dentado, escabroso, ola, elemento, residencia, costero, hermosa, nublado, edificio, cielo, scenic, Destinos De Viaje, verano, apuntalar, vacaciones, superficie, residencial, desarrollo, Boca Peque\u00f1a, panoramic, turismo, \u00c1frica, day, al aire libre, south africa, Aerial View, vista de drones, establecedor, tiro de establecimiento, vista a\u00e9rea view\&quot;}&quot;,&quot;videoMaxId&quot;:6495243,&quot;lastClipId&quot;:null,&quot;clipMetaForSearch&quot;:{&quot;clip_id&quot;:1490738,&quot;clip_title&quot;:&quot;Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.&quot;,&quot;clip_author&quot;:&quot;21Aerials&quot;}},&quot;dataMeta&quot;:{&quot;collections&quot;:[&quot;clips&quot;]},&quot;checksum&quot;:&quot;9dee4a07c2c7c800610dca510225d2c7d1cc16ade57b7cafa9e28d0d7739fb49&quot;}}" class="relative h-full">
+        <div wire:loading.flex class="relative w-full h-full bg-white text-white items-center justify-center">
+        <div class="h-10 w-10 loading-icon">&nbsp;</div>
+    </div>
+        <div id="similar-component"  wire:init="loadClips" @content-updated.window="triggerTrackingsimilar()">
+        <div class="grid gap-3 sm-low-height:grid-cols-2 lg-low-height:grid-cols-3 2xl-low-height:grid-cols-4 sm-high-height:grid-cols-2 lg-high-height:grid-cols-3 xl-high-height:grid-cols-2 2xl-high-height:grid-cols-3 3xl-high-height:grid-cols-4 4xl:grid-cols-5">
+                    </div>
+            </div>
+    <script>
+        if (!window.renderCountsimilarBefore) {
+            window.renderCountsimilarBefore = document.querySelectorAll('#similar-component .theme_post').length;
+        }
+        const triggerTrackingsimilar = () => {
+            window.renderCountsimilarAfter = document.querySelectorAll('#similar-component .theme_post').length;
+            if (window.renderCountsimilarAfter > window.renderCountsimilarBefore) {
+                const pixelDataImpression = JSON.parse('{\u0022path\u0022:\u0022es\\\/video\\\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\\\/1490738\u0022,\u0022ga_client_id\u0022:null,\u0022lang\u0022:\u0022es\u0022,\u0022user_type\u0022:\u0022anonymous\u0022,\u0022user_id\u0022:null,\u0022r\u0022:0.1100852559833253}');
+                pixelDataImpression.content_group = '';
+                pixelDataImpression.tag = '';
+                startTracking(pixelDataImpression, 'similar');
+                window.renderCountsimilarBefore = window.renderCountsimilarAfter;
+            }
+        }
+    </script>
+</div>
+
+<!-- Livewire Component wire-end:XhMSzOdTP7TX0hOFU8Up -->            </div>
+
+                            <div x-cloak x-show="tab === 'tab2'">
+                    <div wire:id="GWbITluJtqX0D4wh0CZb" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;GWbITluJtqX0D4wh0CZb&quot;,&quot;name&quot;:&quot;similar-same&quot;,&quot;locale&quot;:&quot;es&quot;,&quot;path&quot;:&quot;es\/video\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\/1490738&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;dispatches&quot;:[{&quot;event&quot;:&quot;content-updated&quot;,&quot;data&quot;:null}],&quot;listeners&quot;:[]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;de832da0&quot;,&quot;data&quot;:{&quot;videoId&quot;:1490738,&quot;page&quot;:0,&quot;type&quot;:&quot;same&quot;,&quot;clips&quot;:[],&quot;showLoadMore&quot;:false,&quot;firstHashWasCachedBefore&quot;:false,&quot;readyToLoad&quot;:false,&quot;videoSlugEn&quot;:&quot;forwards-fly-above-rugged-sea-coast-waves-rolling-to-coastal-rocks-and-splashing-to-height&quot;,&quot;videoSerieId&quot;:472,&quot;videoTags&quot;:&quot;{\&quot;de\&quot;: \&quot;Haus, Stadt, Dorf, K\u00fcste, Ozean, Gasthaus, Meer, Wasser, Resort, Natur, Felsen, Ausflug, Planschen, Modern, Spr\u00fchen, Stein, Abst\u00fcrzen, Gezackt, Robust, Welle, Element, Reise, Residenz, K\u00fcsten, Sch\u00f6n, Bedeckt, Geb\u00e4ude, Himmel, Szenisch, Reiseziele, Sommer-, Ufer, Ferien, Oberfl\u00e4che, Wohn, Entwicklung, Kleiner Mund, Panorama-, Tourismus, Afrika, Tag, Drau\u00dfen, S\u00fcdafrika, Luftaufnahme, Drohnenansicht, Gr\u00fcnder, Einrichtungsschuss\&quot;, \&quot;en\&quot;: \&quot;Kleinmond, panoramic, coast, south africa, overcast, sea, shore, coastal, shoreline, ocean, establishing shot, nature, drone view, scenic, Aerial view, africa, residence, house, town, residential, stone, tourism, outdoors, rock, vacation, surface, sky, guesthouse, travel, water, travel destinations, resort, jagged, building, rugged, day, wave, development, element, spray, beautiful, crashing, modern, trip, splashing, establisher, summer\&quot;, \&quot;es\&quot;: \&quot;casa, pueblo, costa, Oceano, casa de huespedes, mar, agua, recurso, Naturaleza, rock, orilla, viaje, salpicaduras, moderno, rociar, piedra, estrellarse, dentado, escabroso, ola, elemento, residencia, costero, hermosa, nublado, edificio, cielo, scenic, Destinos De Viaje, verano, apuntalar, vacaciones, superficie, residencial, desarrollo, Boca Peque\u00f1a, panoramic, turismo, \u00c1frica, day, al aire libre, south africa, Aerial View, vista de drones, establecedor, tiro de establecimiento, vista a\u00e9rea view\&quot;}&quot;,&quot;videoMaxId&quot;:6495243,&quot;lastClipId&quot;:null,&quot;clipMetaForSearch&quot;:{&quot;clip_id&quot;:1490738,&quot;clip_title&quot;:&quot;Los Delanteros Vuelan Sobre La Costa Escarpada Del Mar. Olas Rodando Hacia Las Rocas Costeras Y Salpicando A La Altura.&quot;,&quot;clip_author&quot;:&quot;21Aerials&quot;}},&quot;dataMeta&quot;:{&quot;collections&quot;:[&quot;clips&quot;]},&quot;checksum&quot;:&quot;8027141ed1fc092e354950ecbf948a78cae2427b564e5cd34ec7fe9cd258894e&quot;}}" class="relative h-full">
+        <div wire:loading.flex class="relative w-full h-full bg-white text-white items-center justify-center">
+        <div class="h-10 w-10 loading-icon">&nbsp;</div>
+    </div>
+        <div id="same-component"  wire:init="loadClips" @content-updated.window="triggerTrackingsame()">
+        <div class="grid gap-3 sm-low-height:grid-cols-2 lg-low-height:grid-cols-3 2xl-low-height:grid-cols-4 sm-high-height:grid-cols-2 lg-high-height:grid-cols-3 xl-high-height:grid-cols-2 2xl-high-height:grid-cols-3 3xl-high-height:grid-cols-4 4xl:grid-cols-5">
+                    </div>
+            </div>
+    <script>
+        if (!window.renderCountsameBefore) {
+            window.renderCountsameBefore = document.querySelectorAll('#same-component .theme_post').length;
+        }
+        const triggerTrackingsame = () => {
+            window.renderCountsameAfter = document.querySelectorAll('#same-component .theme_post').length;
+            if (window.renderCountsameAfter > window.renderCountsameBefore) {
+                const pixelDataImpression = JSON.parse('{\u0022path\u0022:\u0022es\\\/video\\\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\\\/1490738\u0022,\u0022ga_client_id\u0022:null,\u0022lang\u0022:\u0022es\u0022,\u0022user_type\u0022:\u0022anonymous\u0022,\u0022user_id\u0022:null,\u0022r\u0022:0.4032841908760761}');
+                pixelDataImpression.content_group = '';
+                pixelDataImpression.tag = '';
+                startTracking(pixelDataImpression, 'same');
+                window.renderCountsameBefore = window.renderCountsameAfter;
+            }
+        }
+    </script>
+</div>
+
+<!-- Livewire Component wire-end:GWbITluJtqX0D4wh0CZb -->                </div>
+                        <!-- / Similar_same content -->
+
+            <!-- Adsense -->
+                            <div id="ssm-V2PTGRe0B-1" class="sm:h-[320px] lg:h-[322px] 2xl:h-[344px] bg-gray-100 flex content-center justify-center flex-wrap mt-6"></div>
+                        <!-- / Adsense -->
+
+            <!-- Tags -->
+            <div class="mt-6">
+    <h5 class="mb-2 font-semibold text-gray-900">Sugerencias de etiquetas</h5>
+        <div class="flex flex-wrap gap-2">
+                    <a href="https://www.videvo.net/es/videos-gratis/casa/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="casa"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/casa/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                casa
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/pueblo/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="pueblo"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/pueblo/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                pueblo
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/costa/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="costa"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/costa/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                costa
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/oceano/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="oceano"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/oceano/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                oceano
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/casa-de-huespedes/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="casa de huespedes"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/casa-de-huespedes/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                casa de huespedes
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/mar/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="mar"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/mar/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                mar
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/agua/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="agua"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/agua/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                agua
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/recurso/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="recurso"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/recurso/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                recurso
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/naturaleza/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="naturaleza"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/naturaleza/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                naturaleza
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/rock/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="rock"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/rock/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                rock
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/orilla/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="orilla"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/orilla/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                orilla
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/viaje/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="viaje"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/viaje/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                viaje
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/salpicaduras/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="salpicaduras"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/salpicaduras/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                salpicaduras
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/moderno/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="moderno"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/moderno/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                moderno
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/rociar/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="rociar"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/rociar/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                rociar
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/piedra/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="piedra"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/piedra/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                piedra
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/estrellarse/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="estrellarse"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/estrellarse/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                estrellarse
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/dentado/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="dentado"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/dentado/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                dentado
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/escabroso/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="escabroso"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/escabroso/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                escabroso
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/ola/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="ola"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/ola/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                ola
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/elemento/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="elemento"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/elemento/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                elemento
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/residencia/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="residencia"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/residencia/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                residencia
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/costero/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="costero"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/costero/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                costero
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/hermosa/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="hermosa"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/hermosa/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                hermosa
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/nublado/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="nublado"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/nublado/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                nublado
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/edificio/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="edificio"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/edificio/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                edificio
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/cielo/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="cielo"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/cielo/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                cielo
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/scenic/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="scenic"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/scenic/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                scenic
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/destinos-de-viaje/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="destinos de viaje"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/destinos-de-viaje/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                destinos de viaje
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/verano/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="verano"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/verano/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                verano
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/apuntalar/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="apuntalar"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/apuntalar/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                apuntalar
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/vacaciones/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="vacaciones"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/vacaciones/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                vacaciones
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/superficie/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="superficie"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/superficie/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                superficie
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/residencial/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="residencial"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/residencial/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                residencial
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/desarrollo/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="desarrollo"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/desarrollo/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                desarrollo
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/boca-peque%C3%B1a/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="boca pequeña"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/boca-peque%C3%B1a/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                boca pequeña
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/panoramic/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="panoramic"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/panoramic/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                panoramic
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/turismo/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="turismo"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/turismo/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                turismo
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/%C3%81frica/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="África"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/%C3%81frica/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                África
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/day/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="day"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/day/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                day
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/al-aire-libre/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="al aire libre"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/al-aire-libre/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                al aire libre
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/south-africa/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="south africa"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/south-africa/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                south africa
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/aerial-view/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="aerial view"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/aerial-view/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                aerial view
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/vista-de-drones/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="vista de drones"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/vista-de-drones/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                vista de drones
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/establecedor/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="establecedor"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/establecedor/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                establecedor
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/tiro-de-establecimiento/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="tiro de establecimiento"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/tiro-de-establecimiento/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                tiro de establecimiento
+            </a>
+                    <a href="https://www.videvo.net/es/videos-gratis/vista-a%C3%A9rea-view/#rs=detail-tags" class="rounded bg-gray-100 py-2 px-4 text-sm text-gray-900 hover:bg-blue-500 hover:text-white"
+                ga4-event="related_tags"
+                ga4-link_text="vista aérea view"
+                ga4-link_url="https://www.videvo.net/es/videos-gratis/vista-a%C3%A9rea-view/"
+                ga4-page_type="es.video.detail"
+                onclick="sendEvent(this);"
+            >
+                vista aérea view
+            </a>
+            </div>
+</div>
+        </div>
+        <!-- / Right column -->
+    </div>
+
+            
+        <script>
+            document.addEventListener('alpine:init', () => {
+                Alpine.store('istock').fetchItems('https://videocdn.cdnpk.net/excite/content/video/premium/video0521/thumbnails/GENERAL_SA_AERIAL_00080_large.jpg', 'detail', 'kleinmond,panoramic,coast')
+            })
+        </script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', event => {
+            const detailData = JSON.parse('{\u0022path\u0022:\u0022es\\\/video\\\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\\\/1490738\u0022,\u0022ga_client_id\u0022:null,\u0022lang\u0022:\u0022es\u0022,\u0022user_type\u0022:\u0022anonymous\u0022,\u0022user_id\u0022:null,\u0022r\u0022:0.5439534026868424}');
+            detailData.article = '1490738';
+            detailData.referrer = document.referrer;
+            detailData.referral_source = document.location.hash;
+            detailData.content_group = 'detail';
+            trackCustom('detail', detailData);
+        })
+    </script>
+    </main>
+            <footer class="mt-auto bg-gray-900 pt-8 text-gray-300 sm:pt-14 lg:pt-16">
+    <div class="md:container mx-auto px-8 flex w-full flex-col">
+        <div class="w-full pb-9 mb-9 border-b border-gray-800 flex w-full justify-center md:justify-start">
+            <img width="256" height="28" src="/images/logo-videvo-freepik.svg" class="h-7 hidden md:block"/>
+            <img width="135" height="46" src="/images/logo-videvo-freepik-mobile.svg" class="h-[46px] block md:hidden"/>
+        </div>
+        <div class="flex flex-col gap-8 lg:flex-row lg:gap-24">
+            <div class="flex flex-col items-center sm:items-start lg:w-[30%]">
+                <h3 class="w-full text-left mb-2 text-sm font-semibold text-white uppercase">Sobre Videvo</h3>
+                <p class="mb-2 text-sm text-gray-500">Videvo ofrece vídeos de stock y motion graphics gratuitos para que los uses en cualquier proyecto tanto personal como comercial. Deberás mencionar la autoría del contenido que descargues bajo la licencia Creative Commons 3.0.</p>
+                <p class="text-sm text-gray-500">If you have any suggestions for the site, or would like to make a request for free stock footage please contact us at: <a href="mailto:support@videvo.net" class="text-blue-500 underline hover:no-underline">support@videvo.net</a> and we'll do our best to help.</p>
+            </div>
+            <div class="w-full lg:w-2/5 lg:text-left">
+                <h3 class="mb-2 text-sm font-semibold text-white uppercase">Enlaces de interés</h3>
+                <div class="flex">
+                    <ul class="w-1/2 p-0">
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="/#rs=footer">Vídeo de stock</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/videos-de-stock/#rs=footer">Vídeos</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/motion-graphics-gratis/#rs=footer">Motion graphics</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/templates-edici%C3%B3n-video/#rs=footer">Plantillas de vídeo</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/a/politica-de-privacidad/?lang=es/#rs=footer">Política de privacidad</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/a/terminos-y-condiciones/?lang=es/#rs=footer">Términos y condiciones</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="/a/videvo-api#rs=footer">API</a>
+                        </li>
+                    </ul>
+                    <ul class="w-1/2 p-0">
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/videos-gratis/#rs=footer">Explorar</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/premium-plans/#rs=footer">Premium</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://www.videvo.net/es/afiliados/#rs=footer">Afiliados/as</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="/blog#rs=footer">Blog</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="https://help.videvo.net/category/6-licensing#rs=footer">Términos de uso y licencias</a>
+                        </li>
+                        <li>
+                            <a class="mb-2 inline-block text-sm text-gray-500 hover:text-gray-300" href="/a/contact-us#rs=footer">Ayuda</a>
+                        </li>
+                        <li id="link-cookie-settings">
+                            <button id="ot-sdk-btn" class="ot-sdk-show-settings mb-2 inline-block text-sm !text-gray-500 !hover:text-gray-300">Ver ajustes</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="lg:w-[30%] lg:text-left">
+                <h3 class="mb-2 text-sm font-semibold text-white uppercase">Redes sociales</h3>
+                <p class="mb-4 text-sm text-gray-500">Sigue nuestras redes sociales para estar al tanto de todas las novedades</p>
+                <div class="mb-8 flex gap-4 justify-start">
+                    <a href="https://twitter.com/videvo" target="_blank">
+                        <svg class="fill-current h-8 w-8" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="#1DA1F2"/>
+<path d="M24 12.5381C23.4111 12.7991 22.7792 12.9761 22.1153 13.0552C22.7932 12.6491 23.3121 12.0051 23.5581 11.24C22.9222 11.616 22.2203 11.8891 21.4724 12.0371C20.8736 11.398 20.0217 11 19.0769 11C17.2642 11 15.7945 12.4701 15.7945 14.2823C15.7945 14.5393 15.8235 14.7903 15.8795 15.0303C13.152 14.8933 10.7335 13.5862 9.11477 11.6C8.83182 12.0841 8.67085 12.6481 8.67085 13.2502C8.67085 14.3893 9.25075 15.3943 10.1306 15.9824C9.59268 15.9644 9.08677 15.8164 8.64387 15.5703V15.6113C8.64387 17.2015 9.77566 18.5285 11.2764 18.8306C11.0014 18.9046 10.7115 18.9456 10.4115 18.9456C10.1996 18.9456 9.99462 18.9246 9.79365 18.8846C10.2116 20.1897 11.4234 21.1387 12.8591 21.1648C11.7363 22.0448 10.3206 22.5679 8.78285 22.5679C8.51791 22.5679 8.25694 22.5519 8 22.5229C9.45273 23.456 11.1774 24 13.0311 24C19.0689 24 22.3693 18.9976 22.3693 14.6593L22.3583 14.2343C23.0032 13.7742 23.5611 13.1962 24 12.5381Z" fill="white"/>
+</svg>                    </a>
+                    <a href="https://www.youtube.com/user/VIDEV0" target="_blank">
+                        <svg class="fill-current h-8 w-8" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="#FF0000"/>
+<mask id="mask0_2735_11207" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="11" width="16" height="11">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.00549 11.0034H25V21.9119H9.00549V11.0034Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2735_11207)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3636 18.7589V14.1531L19.5455 16.4561L15.3636 18.7589ZM24.6656 12.7039C24.4816 12.0332 23.9395 11.505 23.2511 11.3258C22.0034 11 17 11 17 11C17 11 11.9966 11 10.7489 11.3258C10.0605 11.505 9.51836 12.0332 9.33436 12.7039C9 13.9196 9 16.456 9 16.456C9 16.456 9 18.9923 9.33436 20.2081C9.51836 20.8788 10.0605 21.407 10.7489 21.5863C11.9966 21.912 17 21.912 17 21.912C17 21.912 22.0034 21.912 23.2511 21.5863C23.9395 21.407 24.4816 20.8788 24.6656 20.2081C25 18.9923 25 16.456 25 16.456C25 16.456 25 13.9196 24.6656 12.7039Z" fill="#FFFFFE"/>
+</g>
+</svg>                    </a>
+                    <a href="https://www.facebook.com/Videvo" target="_blank">
+                        <svg class="fill-current h-8 w-8" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="#1877F2"/>
+<path d="M27 17C27 11.4766 22.5234 7 17 7C11.4766 7 7 11.4766 7 17C7 21.9922 10.6562 26.1289 15.4375 26.8789V19.8906H12.8984V17H15.4375V14.7969C15.4375 12.291 16.9297 10.9062 19.2148 10.9062C20.3086 10.9062 21.4531 11.1016 21.4531 11.1016V13.5625H20.1914C18.9492 13.5625 18.5625 14.334 18.5625 15.125V17H21.3359L20.8926 19.8906H18.5625V26.8789C23.3438 26.1289 27 21.9922 27 17Z" fill="white"/>
+<path d="M20.8926 19.8906L21.3359 17H18.5625V15.125C18.5625 14.334 18.9492 13.5625 20.1914 13.5625H21.4531V11.1016C21.4531 11.1016 20.3086 10.9062 19.2148 10.9062C16.9297 10.9062 15.4375 12.291 15.4375 14.7969V17H12.8984V19.8906H15.4375V26.8789C15.9473 26.959 16.4687 27 17 27C17.5313 27 18.0527 26.959 18.5625 26.8789V19.8906H20.8926Z" fill="#1877F2"/>
+</svg>                    </a>
+                    <a href="https://www.instagram.com/videvostock/" target="_blank">
+                        <svg class="fill-current h-8 w-8" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" rx="3" fill="url(#paint0_linear_2735_11196)"/>
+<mask id="mask0_2735_11196" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="9" width="16" height="16">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9 9.00513H24.995V24.9982H9V9.00513Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2735_11196)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9975 9.00513C14.8255 9.00513 14.5531 9.01433 13.7001 9.05325C12.8489 9.09208 12.2675 9.22729 11.7588 9.425C11.2329 9.62935 10.7869 9.90281 10.3423 10.3474C9.89768 10.792 9.62422 11.238 9.41987 11.764C9.22216 12.2727 9.08695 12.854 9.04813 13.7053C9.00921 14.5583 9 14.8306 9 17.0026C9 19.1746 9.00921 19.4469 9.04813 20.3C9.08695 21.1512 9.22216 21.7326 9.41987 22.2413C9.62422 22.7672 9.89768 23.2132 10.3423 23.6578C10.7869 24.1024 11.2329 24.3759 11.7588 24.5802C12.2675 24.7779 12.8489 24.9131 13.7001 24.952C14.5531 24.9909 14.8255 25.0001 16.9975 25.0001C19.1695 25.0001 19.4418 24.9909 20.2948 24.952C21.1461 24.9131 21.7274 24.7779 22.2361 24.5802C22.762 24.3759 23.208 24.1024 23.6527 23.6578C24.0973 23.2132 24.3707 22.7672 24.5751 22.2413C24.7728 21.7326 24.908 21.1512 24.9468 20.3C24.9857 19.4469 24.995 19.1746 24.995 17.0026C24.995 14.8306 24.9857 14.5583 24.9468 13.7053C24.908 12.854 24.7728 12.2727 24.5751 11.764C24.3707 11.238 24.0973 10.792 23.6527 10.3474C23.208 9.90281 22.762 9.62935 22.2361 9.425C21.7274 9.22729 21.1461 9.09208 20.2948 9.05325C19.4418 9.01433 19.1695 9.00513 16.9975 9.00513ZM16.9975 10.4461C19.1329 10.4461 19.3858 10.4543 20.2291 10.4927C21.0089 10.5283 21.4323 10.6586 21.7142 10.7681C22.0875 10.9132 22.3539 11.0865 22.6337 11.3664C22.9136 11.6462 23.0869 11.9126 23.232 12.2859C23.3415 12.5677 23.4718 12.9912 23.5073 13.7709C23.5458 14.6142 23.554 14.8672 23.554 17.0026C23.554 19.138 23.5458 19.391 23.5073 20.2343C23.4718 21.014 23.3415 21.4375 23.232 21.7193C23.0869 22.0926 22.9136 22.359 22.6337 22.6388C22.3539 22.9187 22.0875 23.092 21.7142 23.2371C21.4323 23.3466 21.0089 23.4769 20.2291 23.5125C19.386 23.5509 19.133 23.5591 16.9975 23.5591C14.8619 23.5591 14.609 23.5509 13.7658 23.5125C12.9861 23.4769 12.5626 23.3466 12.2808 23.2371C11.9075 23.092 11.6411 22.9187 11.3612 22.6388C11.0814 22.359 10.9081 22.0926 10.763 21.7193C10.6535 21.4375 10.5232 21.014 10.4876 20.2343C10.4491 19.391 10.441 19.138 10.441 17.0026C10.441 14.8672 10.4491 14.6142 10.4876 13.7709C10.5232 12.9912 10.6535 12.5677 10.763 12.2859C10.9081 11.9126 11.0814 11.6462 11.3612 11.3664C11.6411 11.0865 11.9075 10.9132 12.2808 10.7681C12.5626 10.6586 12.9861 10.5283 13.7658 10.4927C14.6091 10.4543 14.8621 10.4461 16.9975 10.4461Z" fill="white"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9975 19.6684C15.5251 19.6684 14.3316 18.4749 14.3316 17.0026C14.3316 15.5303 15.5251 14.3367 16.9975 14.3367C18.4697 14.3367 19.6633 15.5303 19.6633 17.0026C19.6633 18.4749 18.4697 19.6684 16.9975 19.6684ZM16.9975 12.8958C14.7293 12.8958 12.8906 14.7344 12.8906 17.0026C12.8906 19.2707 14.7293 21.1094 16.9975 21.1094C19.2656 21.1094 21.1042 19.2707 21.1042 17.0026C21.1042 14.7344 19.2656 12.8958 16.9975 12.8958Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2263 12.7336C22.2263 13.2637 21.7966 13.6933 21.2666 13.6933C20.7366 13.6933 20.3069 13.2637 20.3069 12.7336C20.3069 12.2036 20.7366 11.7739 21.2666 11.7739C21.7966 11.7739 22.2263 12.2036 22.2263 12.7336Z" fill="white"/>
+<defs>
+<linearGradient id="paint0_linear_2735_11196" x1="20.4339" y1="41.4321" x2="40.3728" y2="6.34518" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F38334"/>
+<stop offset="0.503906" stop-color="#DA2E7D"/>
+<stop offset="1" stop-color="#6B54C6"/>
+</linearGradient>
+</defs>
+</svg>                    </a>
+                </div>
+                <h3 class="mb-2 text-sm font-semibold text-white uppercase">Idiomas disponibles</h3>
+                <div class="flex items-center gap-2 justify-start">
+                    <a href="https://www.videvo.net/video/forwards-fly-above-rugged-sea-coast-waves-rolling-to-coastal-rocks-and-splashing-to-height/1490738/#rs=footer" class="flex items-center gap-2 rounded py-2 px-4 text-sm text-gray-500 hover:bg-[#000]/30">
+                        <img src="/images/en-flag.svg" class="h-4 w-4" alt="EN flag" />
+                        English                    </a>
+
+                    <a href="https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/#rs=footer" class="flex items-center gap-2 rounded py-2 px-4 text-sm bg-[#000]/30 text-white">
+                        <img src="/images/es-flag.svg" class="h-4 w-4" alt="ES flag" />
+                        Español                    </a>
+                    <a href="https://www.videvo.net/de/video/vorwarts-fliegen-uber-der-zerklufteten-meereskuste-wellen-die-auf-kustenfelsen-rollen-und-in-die-hohe-spritzen/1490738/#rs=footer" class="flex items-center gap-2 rounded py-2 px-4 text-sm text-gray-500 hover:bg-[#000]/30">
+                        <img src="/images/de-flag.svg" class="h-4 w-4" alt="DE flag" />
+                        Deutsch                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-8 sm:mt-16 md:container mx-auto px-8 flex w-full flex-col">
+        <div class="mx-auto flex flex-col items-center justify-between border-t border-gray-800 py-6 text-center sm:flex-row md:block w-full">
+            <div class="flex flex-col sm:flex-row items-center sm:justify-start md:gap-x-12">
+                <img width="105" height="16" src="/images/logo-freepik.svg" class="mb-2 h-4 sm:mb-0 max-w-xs" alt="Freepik Company">
+                <p class="ml-2 text-sm leading-normal text-gray-500 opacity-75">
+                    Copyright ©2024 Freepik Company S.L.
+                    Todos los derechos reservados.                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-800 bg-opacity-75 py-3">
+        <div class="md:container px-8 mx-auto flex flex-col items-center text-sm text-gray-500 sm:flex-row sm:justify-between">
+            <strong>Proyectos de Freepik Company</strong>
+                        <ul class="mt-2 ml-auto flex w-full flex-1 justify-end sm:mt-0 sm:w-auto">
+                <li class="mb-0 flex-1 sm:flex-initial">
+                    <a class="mb-0 block px-2 text-center hover:text-gray-300 sm:inline" href="https://www.freepik.com#rs=videvo-footer" target="_blank" rel="noreferrer">Freepik</a>
+                </li>
+                <li class="mb-0 flex-1 sm:flex-initial">
+                    <a class="mb-0 block px-2 text-center hover:text-gray-300 sm:inline" href="https://www.flaticon.com#rs=videvo-footer" target="_blank" rel="noreferrer">Flaticon</a>
+                </li>
+                <li class="mb-0 flex-1 sm:flex-initial">
+                    <a class="mb-0 block px-2 text-center hover:text-gray-300 sm:inline" href="https://www.slidesgo.com#rs=videvo-footer" target="_blank" rel="noreferrer">Slidesgo</a>
+                </li>
+                <li class="mb-0 flex-1 sm:flex-initial">
+                    <a class="mb-0 block px-2 text-center hover:text-gray-300 sm:inline" href="https://www.wepik.com#rs=videvo-footer" target="_blank" rel="noreferrer">Wepik</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    
+    <script src="/vendor/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false" ></script><script data-turbo-eval="false" data-turbolinks-eval="false" >window.livewire = new Livewire();window.Livewire = window.livewire;window.livewire_app_url = '';window.livewire_token = 'gRWR47FSO9t4e5tanQXW0SDTNJfWwNAhXAbXNcuT';window.deferLoadingAlpine = function (callback) {window.addEventListener('livewire:load', function () {callback();});};let started = false;window.addEventListener('alpine:initializing', function () {if (! started) {window.livewire.start();started = true;}});document.addEventListener("DOMContentLoaded", function () {if (! started) {window.livewire.start();started = true;}});</script>
+
+<link rel="modulepreload" href="https://www.videvo.net/build/assets/app.7baef85c.js" /><script type="module" src="https://www.videvo.net/build/assets/app.7baef85c.js"></script>
+    <script>
+        //Post to Facebook Feed
+        function postToFacebookFeed() {
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href,'facebook-share-dialog',"width=626, height=436")
+        }
+
+        function copyLink() {
+            let text = window.location.href;
+            navigator.clipboard.writeText(text);
+            let confirmationModule = document.querySelector('.confirmation-module');
+            confirmationModule.classList.remove('hidden');
+            setTimeout(() => {
+                confirmationModule.classList.add('hidden');
+            }, 2000);
+        }
+    </script>
+  <script>
+      function copyCouponCode() {
+          navigator.clipboard.writeText(document.getElementById('coupon-code').innerText);
+          document.getElementById('copy-message').classList.remove('hidden');
+          setTimeout(function() {
+              document.getElementById('copy-message').classList.add('hidden');
+          }, 2000);
+      }
+  </script>
+  <script>
+    function emitClickEvents () {
+        emitIstockEvent('clk')
+        emitGaEvent()
+    }
+
+    /**
+     * Track iStock event
+     */
+    function emitIstockEvent (action) {
+        const detailData = {
+            sponsor_pixel: getAdPlacement('video.detail'),
+            sponsor: 'istock',
+            term: '',
+            r: Math.random(),
+            action: action,
+            type: 'reverse_search',
+        }
+        trackCustomiStock(detailData)
+    }
+
+    /**
+     * Track GA4 event
+     */
+    function emitGaEvent () {
+        window.dataLayer.push({
+            event: 'istockEvent',
+            eventCategory: 'Istock',
+            eventAction: 'Triggered istock event on carousel click',
+            eventLabel: 'url: ' + "https://www.videvo.net/es/video/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura/1490738/"
+        })
+    }
+
+    /**
+     * Track iStock event (impression) on page load
+     */
+    document.addEventListener('DOMContentLoaded', event => {
+        emitIstockEvent('imp')
+    })
+</script>
+
+        <div wire:id="2jT00uXGXRtRLb9Gyg5F" wire:initial-data="{&quot;fingerprint&quot;:{&quot;id&quot;:&quot;2jT00uXGXRtRLb9Gyg5F&quot;,&quot;name&quot;:&quot;modals.generic-modal&quot;,&quot;locale&quot;:&quot;es&quot;,&quot;path&quot;:&quot;es\/video\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\/1490738&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;v&quot;:&quot;acj&quot;},&quot;effects&quot;:{&quot;listeners&quot;:[&quot;show&quot;,&quot;refreshComponent&quot;]},&quot;serverMemo&quot;:{&quot;children&quot;:[],&quot;errors&quot;:[],&quot;htmlHash&quot;:&quot;3753c621&quot;,&quot;data&quot;:{&quot;show&quot;:false,&quot;response&quot;:[],&quot;modalContent&quot;:&quot;&quot;},&quot;dataMeta&quot;:[],&quot;checksum&quot;:&quot;42ad3e0d28213dd45ddfb5545abff8cd3ceccc6213c2c389e70f958f6bec132a&quot;}}" >
+    </div>
+</div>
+  
+
+<!-- Livewire Component wire-end:2jT00uXGXRtRLb9Gyg5F -->    
+            <div x-data="mustLoginCollections"
+    x-cloak x-show="open"
+    @showmustlogincollections.window="show"
+    x-transition.duration.400ms
+    class="fixed overflow-y-auto z-5 bottom-24 right-8 rounded-lg shadow-[0_3px_3px_rgb(0,0,0,0.2)]" >
+
+    <div class="bg-white overflow-hidden transform sm:w-full sm:mx-auto max-w-lg">
+        <div class="flex flex-col items-center justify-center">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex items min-w-[300px]">
+                    <div class="w-0 flex-1 pt-0.5">
+                        <p class="text-sm font-medium text-gray-900">Para añadir un audio a tu coleccion, debes iniciar sesión</p>
+                    </div>
+                </div>
+                <div class="flex-1 pt-0.5 w-full">
+                    <a class="text-sm font-semibold text-gray-900 underline" href="https://www.videvo.net/es/auth/login/">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('mustLoginCollections', () => ({
+            open: false,
+            responseTimeoutId: null,
+            timeoutId: null,
+
+            show () {
+                clearTimeout(this.timeoutId)
+                this.open = true
+                this.timeoutId = setTimeout(() => this.open = false, 6000)
+            }
+        }))
+    })
+</script>        <div x-data="mustLoginFavorites"
+    x-cloak x-show="open"
+    @showmustloginfavorites.window="show"
+    x-transition.duration.400ms
+    class="fixed overflow-y-auto z-5 bottom-24 right-8 rounded-lg shadow-[0_3px_3px_rgb(0,0,0,0.2)]" >
+
+    <div class="bg-white overflow-hidden transform sm:w-full sm:mx-auto max-w-lg">
+        <div class="flex flex-col items-center justify-center">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="flex items min-w-[300px]">
+                    <div class="w-0 flex-1 pt-0.5">
+                        <p class="text-sm font-medium text-gray-900">Para añadir un audio a favoritos, debes iniciar sesión</p>
+                    </div>
+                </div>
+                <div class="flex-1 pt-0.5 w-full">
+                    <a class="text-sm font-semibold text-gray-900 underline" href="https://www.videvo.net/es/auth/login/">Iniciar sesión</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('mustLoginFavorites', () => ({
+            open: false,
+            responseTimeoutId: null,
+            timeoutId: null,
+
+            show () {
+                clearTimeout(this.timeoutId)
+                this.open = true
+                this.timeoutId = setTimeout(() => this.open = false, 6000)
+            }
+        }))
+    })
+</script>
+
+    
+    <template x-data x-if="Alpine.store('scriptLoader')?.loadScripts" id="gtm-events-scripts">
+        <script>
+
+window.sendEvent = function ( element ) {
+    var data = {};
+    const attributes = element.attributes;
+
+    for ( var i = 0; i < attributes.length; i++ ) {
+        if ( attributes[i].name.includes( "ga4-" ) ) {
+            data[attributes[i].name.replace( "ga4-", "" )] = attributes[i].value;
+        }
+    }
+    
+    dataLayer.push( data );
+};
+
+window.sendEventData = function ( data ) {
+    dataLayer.push( data );
+};
+
+
+window.addEventListener('load', function () {
+    Livewire.on('filterChange', filterData => {
+        layerData = ``;
+        for (const [key, value] of Object.entries(filterData)) {
+            filterValue = value;
+            if (typeof value === 'object') {
+                filterValue = value.join('|');
+            }
+            if (!value) {
+                filterValue = '-';
+            }
+            layerData += `${key} : ${filterValue} ; `;
+        }
+        
+        dataLayer.push({
+            'event' : 'filter_selection',
+            'filter_name': layerData,
+        });
+
+        dataLayer.push({
+            'event' : 'filter_apply',
+            'filter_name': layerData,
+        });
+    })
+
+    Livewire.on('addedNewCollectionGA4', collectionData => {
+        var parsedCollectionData = JSON.parse(collectionData);
+        parsedCollectionData['location'] = 'es.video.detail';
+        
+        dataLayer.push(
+            parsedCollectionData
+        );
+    })
+    
+    Livewire.on('addedClipToNewCollectionGA4', clipAndCollectionData => {
+        var parsedClipAndCollectionData = JSON.parse(clipAndCollectionData);
+        parsedClipAndCollectionData['location'] = 'es.video.detail';
+        
+        dataLayer.push(
+            parsedClipAndCollectionData
+        );
+    })
+
+    document.addEventListener("click", function (e) {
+        // general event tracking
+        if ( e.target && e.target.matches("[gtm-event]") ) {
+            let eventName = e.target.attributes["gtm-event"].value
+            let label = e.target.attributes["gtm-label"].value || eventName;
+            let category = e.target.attributes["gtm-category"].value || eventName;
+            let layerData = {
+                'event': eventName,
+                'category': category,
+                'action': 'Clicked',
+                'label': label,
+                'value': 1
+            }
+            dataLayer.push(layerData);
+        }
+
+    });
+    document.addEventListener("click", function (e) {
+        // general event tracking
+        if ( e.target && e.target.matches("[shutterstock-clip]") ) {
+            let label = e.target.attributes["shutterstock-clip"].value;
+            let layerData = {
+                'event': "shuttertockEvent",
+                'category': "Shutterstock",
+                'action': 'Clicked',
+                'label': `Shutterstock : ${label}`,
+                'value': 1
+            }
+            dataLayer.push(layerData);
+        }
+
+    });
+
+    document.querySelectorAll(`[data-related-videos="true"] [video-anchor]`).forEach( (el) => {
+        el.addEventListener('click', function (e) {
+            e.preventDefault();
+            let layerData = {
+                'event': 'click_on_a_similar_clip_in_download_page',
+                'category': "Similar Clip download page",
+                'action': 'Click Similar Clip download page',
+                'label': "Click Similar Clip download page",
+                'value': 1
+            }
+
+            console.log(layerData);
+            dataLayer.push(layerData);
+        }); 
+    }); 
+
+
+    Livewire.on('toggleFavorite', () => {
+        let layerData = {
+            'event': 'click_on_secondary_actions',
+            'category': "Secondary Action",
+            'action': 'Secondary Action',
+            'label': "Secondary Action",
+            'value': 1
+        }
+        dataLayer.push(layerData);
+    })
+
+    Livewire.on('toggleAddToCollection', () => {
+        let layerData = {
+            'event': 'click_on_secondary_actions',
+            'category': "Secondary Action",
+            'action': 'Secondary Action',
+            'label': "Secondary Action",
+            'value': 1
+        }
+        dataLayer.push(layerData);
+    })
+
+    Livewire.on('addToCollectionNotLoggedIn', () => {
+        let layerData = {
+            'event': 'add_to_collection_not_logged_in',
+            'category': "Add to Collection Not Logged In",
+            'action': 'Add to Collection Not Logged In',
+            'label': "Add to Collection Not Logged In",
+            'value': 1
+        }
+        dataLayer.push(layerData);
+    })
+
+    Livewire.on('addToCollectionLoggedIn', () => {
+        let layerData = {
+            'event': 'add_to_collection_logged_in',
+            'category': "Add to Collection Logged In",
+            'action': 'Add to Collection Logged In',
+            'label': "Add to Collection Logged In",
+            'value': 1
+        }
+        dataLayer.push(layerData);
+    })
+
+});
+
+
+</script>
+
+    </template>
+
+            <script>
+            localStorage.removeItem('session/user');
+            localStorage.removeItem('user-info-videvo');
+            localStorage.removeItem('billing-info');
+            localStorage.removeItem('user-videvo-data');
+        </script>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', event => {
+            const pixelDataImpression = JSON.parse('{\u0022path\u0022:\u0022es\\\/video\\\/los-delanteros-vuelan-sobre-la-costa-escarpada-del-mar-olas-rodando-hacia-las-rocas-costeras-y-salpicando-a-la-altura\\\/1490738\u0022,\u0022ga_client_id\u0022:null,\u0022lang\u0022:\u0022es\u0022,\u0022user_type\u0022:\u0022anonymous\u0022,\u0022user_id\u0022:null,\u0022r\u0022:0.9037967924511977}');
+            pixelDataImpression.content_group = '';
+            pixelDataImpression.tag = '';
+            startTracking(pixelDataImpression);
+        })
+    </script>
+
+            <script>
+window.onload = function() {
+    showGoogleOneTap();
+};
+
+function showGoogleOneTap() {
+    google.accounts.id.initialize({
+        client_id: '705648808057-3chuddbr6oahbebib1uh693k02sgfl30.apps.googleusercontent.com',
+        callback: handleCredentialsResponse,
+        cancel_on_tap_outside: false,
+        prompt_parent_id: '#credential_picker_container',
+        itp_support: true,
+        context: 'use'
+    });
+
+    google.accounts.id.prompt(
+        (notification) => {
+            if (notification.isNotDisplayed()) return;
+        }
+    );
+}
+
+function handleCredentialsResponse(credentials) {
+    const postData = {
+        credential: credentials.credential
+    };
+
+    const hint = JWTDecode(credentials.credential);
+
+    if (hint.email_verified === true) {
+        localStorage.setItem(
+            'id.videvo.net.auth.hints',
+            JSON.stringify({
+                email: hint.email,
+                email_verified: hint.email_verified,
+                picture: hint.picture
+            })
+        );
+    }
+
+    const requestOptions = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
+    };
+
+    fetch(
+        `https://id-api.freepikcompany.com/v2/login/google-one-tap?client_id=videvo&lang=${getCookie('gr_lang')}&no-redirect=1`,
+        requestOptions
+        )
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok..');
+            }
+            
+            return response.json();
+        })
+        .then(data => {
+            if (!data.success || !data.data.redirectUrl) {
+                throw new Error('Redirect URL not found in response data..');
+            }
+
+            window.location.href = data.data.redirectUrl;
+        })
+        .catch(error => {
+            console.error(error);
+        });
+}
+
+function JWTDecode(token) {
+    let base64Url = token.split('.')[1];
+    let base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function(c) {
+        return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+    }).join(''));
+
+    return JSON.parse(jsonPayload);
+}
+
+function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+
+    if (parts.length === 2) return parts.pop().split(';').shift();
+}
+
+function getStorageItem(key) {
+    return JSON.parse(localStorage.getItem(key) || null);
+}
+</script>    
+    </body>
+
+</html>

@@ -1,50 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Television</title>
+    <title>Televisión</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="css/style.css" class="">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="pantalla-tv" id="pantalla-tv">
-        <div class="nombre-del-canal" id="nombre-del-canal">Nombre del canal</div>
-          <div class="info">
-            <div class="hora" id="hora-actual">12:00PM</div>
-            <div class="fecha" id="fecha-actual">15 de abrl,2024
-            </div>
-          </div>
-              <div class="volumen" id="volumen">volumen:100</div>
-              <div class="menu-oculto" id="menu">
-
-              <ul>
+    <div class="tv-screen" id="tv-screen">
+        <div class="nombre-canal" id="nombre-canal">Nombre del Canal</div>
+        <div class="info">
+            <div class="hora" id="hora-actual">12:00 PM</div>
+            <div class="fecha" id="fecha-actual">13 de Abril, 2024</div>
+        </div>
+        <div class="volumen" id="volumen">Volumen: 100</div>
+        <div class="menu oculto" id="menu">
+            <ul>
                 <li>Inicio</li>
                 <li>Configuración</li>
                 <li>Canal 1</li>
                 <li>Canal 2</li>
                 <li>Canal 3</li>
-              </ul>
-              </div>
-            </div>
+                <li>Canal 4</li>
+                <li>Canal 5</li>
+                <li>Canal 6</li>
+            </ul>
+        </div>
+    </div>
 
-            <div class="mando">
-                <button class="subir">+</button>
-                <button class="bajar">-</button>
-                <button class="subir-vol"><i class="fas fa-volume-up"></i></i></button>
-                <button class="bajar-vol"><i class="fas fa-volume-down"></i></button>
-                <button class="encendido"><i class="fas fa-power-off"></i></button>
-                <button class="menu-btn">MENU</button>
-            </div>
+    <div class="control-remoto">
+        <button class="subir-canal">+</button>
+        <button class="bajar-canal">-</button>
+        <button class="subir-volumen"><i class="fas fa-volume-up"></i></button>
+        <button class="bajar-volumen"><i class="fas fa-volume-down"></i></button>
+        <button class="encendido"><i class="fas fa-power-off"></i></button>
+        <button class="btn-menu">Menú</button> <!-- Cambiado a "btn-menu" -->
+      
+    </div>
 
-            <div class="menu-oculto">
-                
-            </div>
+    <div class="pantalla-menu oculto">
+        <h2>Menú</h2>
+        <!-- Contenido del menú -->
+    </div>
 
+    <div class="pantalla-configuracion oculto">
+        
+      
+    </div>
 
+    <audio src="./audio/elpadrino.mp3" controls></audio>
+     <audio src="./audio/panterapink.mp3"></audio>
 
-            <script src="./js/main.js"></script>
-    
+    <script src="js/main.js"></script>
 </body>
 </html>
